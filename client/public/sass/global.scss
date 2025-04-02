@@ -1,0 +1,115 @@
+@import "./base/mixin.scss";
+@import "./base/variable.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: inherit;
+    background-color: #f5f5f5;
+    padding: 0px;
+    margin: 0px;
+
+    .css-10nakn3-MuiModal-root-MuiPopover-root-MuiMenu-root{
+        position: absolute;
+    }
+
+    .helper_text_field {
+        .MuiTypography-root {
+            color: red;
+            line-height: 14px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+}
+
+.MuiGrid-root {
+    padding-top: 0px;
+}
+
+.container,
+.row {
+    height: 100%;
+}
+
+/* 1680 desktop */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* 1600 desktop */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Above 1400 and Below 1599 Desktop*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* 1300 desktop only */
+@media (min-width: 1300px) and (max-width: 1399px) {}
+
+/* 1200 desktop only */
+@media (min-width: 1200px) and (max-width: 1299px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .css-10nakn3-MuiModal-root-MuiPopover-root-MuiMenu-root{ 
+        z-index: 99999;
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .css-10nakn3-MuiModal-root-MuiPopover-root-MuiMenu-root{ 
+        z-index: 99999;
+
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        .css-10nakn3-MuiModal-root-MuiPopover-root-MuiMenu-root{
+            
+            z-index: 99999;
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    body {
+        .css-10nakn3-MuiModal-root-MuiPopover-root-MuiMenu-root{
+            
+            z-index: 99999;
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    body {
+        .css-10nakn3-MuiModal-root-MuiPopover-root-MuiMenu-root{
+            
+            z-index: 99999;
+        }
+        
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    body {
+        .css-10nakn3-MuiModal-root-MuiPopover-root-MuiMenu-root{
+            
+            z-index: 99999;
+        }
+    }
+}

@@ -1,0 +1,483 @@
+@import "../base/mixin.scss";
+@import "../base/variable.scss";
+@import "../helper/base.scss";
+
+.blog_container {
+    .inner_parent {
+        .highlighted {
+            margin-bottom: 43px;
+            
+
+            .images {
+                height: inherit;
+                overflow: hidden;
+                display: contents;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .date {
+                color: #0D3FB1;
+                font-size: 14px;
+                font-weight: 600;
+                text-align: left;
+                margin-bottom: 10px;
+            }
+
+            .heading {
+                font-size: 24px;
+                font-weight: 600;
+                text-align: left;
+                color: #1A1A1A;
+                position: relative;
+                margin-bottom: 10px;
+                padding-right: 60px;
+
+                .MuiButtonBase-root  {
+                    position: absolute;
+                    top: 0px;
+                    right: 3px;
+                    padding: 0 0 0 8px;
+                    color: black;
+
+                    
+                        .MuiSvgIcon-root {
+                            height: 17px;
+                            width: 17px;
+                        }
+                    
+
+                }
+            }
+
+            .description {
+                font-size: 16px;
+                font-weight: 400;
+                text-align: left;
+                color: #3B3C4A;
+                line-height: 24px;
+            }
+        }
+
+        .all_blogs {
+            margin-bottom: 30px;
+
+            .head {
+                font-size: 24px;
+                font-weight: 600;
+                text-align: left;
+                color: #1A1A1A;
+                margin-bottom: 30px;
+            }
+
+            .card {
+
+                .images {
+                    height: inherit;
+                    overflow: hidden;
+
+                    img {
+                        height: 60%;
+                        object-fit: cover;
+
+                    }
+                }
+
+                .date {
+                    margin-top: 10px;
+                    color: #0D3FB1;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+
+                .heading {
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-align: left;
+                    color: #1A1A1A;
+                    position: relative;
+                    margin-bottom: 10px;
+                    padding-right: 60px;
+
+                    .MuiButtonBase-root  {
+                        position: absolute;
+                        top: 0px;
+                        right: 3px;
+                        padding: 0 0 0 8px;
+                        color: black;
+    
+                        
+                            .MuiSvgIcon-root {
+                                height: 18px;
+                                width: 18px;
+                            }
+                        
+    
+                    }
+                    
+                }
+
+                .description {
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-align: left;
+                    color: #3B3C4A;
+                    line-height: 24px;
+                    
+                }
+            }
+            .pagination{
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+                    background-color: lightgrey;
+                    color: purple;
+                    font-weight: 550;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .blog_container {
+        .inner_parent {
+            .highlighted {
+                margin-bottom: 30px;
+
+                .date {
+                    margin-bottom: 8px;
+                }
+
+                .heading {
+                    font-size: 23px;
+                    margin-bottom: 8px;
+                }
+            }
+
+            .all_blogs {
+                .head {
+                    font-size: 23px;
+                }
+
+                .card {
+
+                    .images {
+                        img {
+                            height: 60%;
+                        }
+                    }
+
+                    .date {
+                        margin-bottom: 8px;
+                    }
+
+                    .heading {
+                        padding-right: 48px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog_container {
+        .inner_parent {
+            .highlighted {
+                margin-bottom: 30px;
+
+                .date {
+                    margin-bottom: 8px;
+                }
+
+                .heading {
+                    font-size: 20px;
+                    margin-bottom: 8px;
+                }
+            }
+
+            .all_blogs {
+                .head {
+                    font-size: 23px;
+                }
+
+                .card {
+
+                    .images {
+                        img {
+                            height: 60%;
+                        }
+                    }
+
+                    .date {
+                        margin-bottom: 8px;
+                    }
+
+                    .heading {
+                        padding-right: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .blog_container {
+        .inner_parent {
+            .highlighted {
+                margin-bottom: 20px;
+
+                .date {
+                    margin: 7px 0px;
+                }
+
+                .heading {
+                    font-size: 20px;
+                    margin-bottom: 8px;
+                }
+
+                .description {
+                    font-size: 14px;
+                }
+            }
+
+            .all_blogs {
+                margin-bottom: 20px;
+
+                .head {
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+
+                .card {
+                    .images {
+                        img {
+                            height: 60%;
+                        }
+                    }
+
+                    .date {
+                        margin-bottom: 6px;
+                        font-size: 13px;
+                    }
+                   
+
+                    .heading {
+                        padding-right: 24px;
+                        font-size: 17px;
+                        margin-bottom: 6px;
+
+                    }
+
+                    .description {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .blog_container {
+        .inner_parent {
+            .highlighted {
+                margin-bottom: 20px;
+
+                .date {
+                    margin: 6px 0px;
+                }
+
+                .heading {
+                    font-size: 18px;
+                    margin-bottom: 8px;
+
+                }
+
+                .description {
+                    font-size: 14px;
+                }
+            }
+
+            .all_blogs {
+                margin-bottom: 20px;
+
+                .head {
+                    font-size: 17px;
+                    margin-bottom: 20px;
+                    text-align: center;
+
+                }
+
+                .card {
+                    .images {
+                        img {
+                            height: 60%;
+                        }
+                    }
+
+                    .date {
+                        margin: 6px 0px;
+                        font-size: 13px;
+                    }
+                   
+
+                    .heading {
+                        padding-right: 24px;
+                        font-size: 16px;
+                        margin-bottom: 6px;
+
+                    }
+
+                    .description {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .blog_container {
+        .inner_parent {
+            .highlighted {
+                margin-bottom: 20px;
+
+                .date {
+                    margin: 6px 0px;
+                }
+
+                .heading {
+                    font-size: 17px;
+                    margin-bottom: 8px;
+                }
+
+                .description {
+                    font-size: 14px;
+                }
+            }
+
+            .all_blogs {
+                margin-bottom: 20px;
+
+                .head {
+                    font-size: 17px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+
+                .card {
+                    .images {
+                        img {
+                            height: 60%;
+                        }
+                    }
+
+                    .date {
+                        margin: 6px 0px;
+                        font-size: 13px;
+                    }
+                   
+
+                    .heading {
+                        padding-right: 24px;
+                        font-size: 16px;
+                        margin-bottom: 6px;
+
+                    }
+
+                    .description {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    .blog_container {
+        .inner_parent {
+            .highlighted {
+                margin-bottom: 20px;
+
+                .date {
+                    margin: 6px 0px;
+                }
+
+                .heading {
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                }
+
+                .description {
+                    font-size: 14px;
+                }
+            }
+
+            .all_blogs {
+                margin-bottom: 20px;
+
+                .head {
+                    font-size: 17px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+
+                .card {
+                    .images {
+                        img {
+                            height: 60%;
+                        }
+                    }
+
+                    .date {
+                        margin: 6px 0px;
+                        font-size: 13px;
+                    }
+                   
+
+                    .heading {
+                        padding-right: 24px;
+                        font-size: 16px;
+                        margin-bottom: 6px;
+                        
+
+                    }
+
+                    .description {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

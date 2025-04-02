@@ -1,0 +1,801 @@
+@import "../base/mixin.scss";
+@import "../base/variable.scss";
+@import "../helper/base.scss";
+@import "../helper/reset.scss";
+
+
+.header_container {
+    margin-bottom: 10px;
+
+    .inner_parent {
+        background-color: white;
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left_container {
+            .appLogo {
+                width: 118px;
+                height: 32px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .middle_container {
+            .nav_list {
+                display: flex;
+                flex-direction: row;
+                gap: 33px;
+
+                .list_item {
+                    color: #000929;
+                    font-size: 14px;
+                    position: relative;
+                    transition: transform 0.2s ease;
+
+                    &:hover {
+                        color: blue;
+                    }
+
+                    &.active {
+                        color: blue;
+                        transform: scaleX(1.08);
+                    }
+                }
+
+            }
+        }
+
+        .right_container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            .right {
+                .login {
+                    border-radius: 6px;
+                    background: linear-gradient(90deg, #7E81E7 -12.81%, #0F40B2 100%);
+                    color: white;
+                    align-items: center;
+                    text-transform: none;
+
+                    .MuiTypography-root {
+
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .right_resp {
+                display: none;
+
+                .login {
+                    border-radius: 6px;
+                    background: linear-gradient(90deg, #7E81E7 -12.81%, #0F40B2 100%);
+                    color: white;
+                    align-items: center;
+                    text-transform: none;
+
+                    .MuiTypography-root {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .sidebar_nav {
+                background-color: white;
+                border-radius: 16px;
+                overflow: hidden;
+                position: absolute;
+                top: 120%;
+                right: -1000%;
+                z-index: 5;
+                box-shadow: 0.5px 0.5px 3px 0px #0F40B2;
+                transition: all 0.2s ease;
+                &.active{
+                    right: 0%;
+                }
+
+                .nav_profile {
+                    background-color: rgba(178, 173, 246, 1);
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 16px;
+
+                    .nav_image {
+                        height: 53px;
+                        width: 53px;
+                        overflow: hidden;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .nav_data {
+                        h4 {
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 31.25px;
+                            color: white;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 20.83px;
+                            color: white;
+                        }
+                    }
+                }
+
+                .nav_list {
+                    padding: 0px 16px;
+
+                    .list_item {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20.83px;
+                        display: flex;
+                        cursor: pointer;
+                        align-items: center;
+                        gap: 10px;
+                        padding: 10px;
+                        color: rgb(0, 0, 0, 1);
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+                        .MuiSvgIcon-root {
+                            color: rgba(0, 0, 0, 1);
+                        }
+
+                        &:hover {
+                            color: #7E81E7;
+
+                            .MuiSvgIcon-root {
+                                color: #7E81E7;
+                            }
+                        }
+
+                        &.active {
+                            color: #7E81E7;
+                            font-weight: 650;
+
+                            .MuiSvgIcon-root {
+                                color: #7E81E7;
+                            }
+                        }
+                    }
+                }
+
+
+                .logout {
+                    padding: 9px;
+
+                    .MuiButtonBase-root {
+                        display: flex;
+                        align-items: center;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20.83px;
+                        color: rgb(0, 0, 0, 1);
+                        text-transform: none;
+                        transition: transform 0.3s ease;
+
+                        &:hover {
+                            color: #0F40B2;
+                        }
+                    }
+                }
+            }
+
+            .menu {
+                display: none;
+            }
+        }
+    }
+
+    .responsive_header {
+        background-color: #7E81E7;
+        z-index: 99999;
+        position: fixed;
+        inset: 0px;
+        padding: 10px 5px;
+
+        .innerparent {
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                .Logo {
+                    width: 118px;
+                    height: 37px;
+                  
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        filter: drop-shadow(0px 0px 8px rgb(186, 176, 208) );
+                    }
+                }
+            }
+
+            .navlist {
+                margin-top: 10px;
+
+                .lisItem {
+                    color: white;
+                    line-height: 25px;
+                    transition: color 0.3s ease;
+                    margin-top: 10px;
+                    font-size: 15px;
+
+                    :hover {
+                        color: black;
+
+                    }
+
+                    :active {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1920px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 900px) and (max-width: 991px) {
+    .header_container {
+        .inner_parent {
+            .right_container {
+                .right {
+                    display: none;
+                }
+
+                .right_resp {
+                    display: block;
+                }
+                .sidebar_nav {
+                    .nav_list {
+                        .list_item {
+                            cursor: none;   
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+    .header_container {
+        .inner_parent {
+            padding: 8px 0px;
+
+            .left_container {
+                .appLogo {
+                    width: 110px;
+                    height: 37px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .middle_container {
+                display: none;
+            }
+
+            .right_container {
+                .right {
+                    display: none;
+                }
+
+                .right_resp {
+                    display: block;
+
+                    .login {
+                        padding: 4px 6px;
+
+                        .MuiTypography-root {
+                            font-size: 14px;
+                        }
+                    }
+
+                }
+                .sidebar_nav {
+                    .nav_profile {
+                        .nav_image {
+                            height: 48px;
+                            width: 48px;
+                        }
+    
+                        .nav_data {
+                            h4 {
+                                font-size: 18px;
+                            }
+    
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+    
+                    .nav_list {
+                        padding: 5px;
+    
+                        .list_item {
+                            font-size: 14px;
+                            cursor: none;
+                            padding: 8px;    
+                        }
+                    }
+    
+    
+                    .logout {
+                        padding: 8px;
+                    }
+                }
+                .menu {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 4px;
+                }
+            }
+        }
+
+        .responsive_header {
+            .innerparent {
+                .header {
+                    .Logo {
+                        width: 110px;
+                        height: 37px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .header_container {
+        .inner_parent {
+            padding: 8px 0px;
+
+            .left_container {
+                .appLogo {
+                    width: 110px;
+                    height: 37px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .middle_container {
+                display: none;
+            }
+
+            .right_container {
+                .right {
+                    display: none;
+                }
+
+                .right_resp {
+                    display: block;
+
+                    .login {
+                        padding: 4px 6px;
+
+                        .MuiTypography-root {
+                            font-size: 14px;
+                        }
+                    }
+
+                }
+                .sidebar_nav {
+                    .nav_profile {
+                        padding: 16px;
+                        gap: 6px;
+                        .nav_image {
+                            height: 48px;
+                            width: 48px;
+                        }
+    
+                        .nav_data {
+                            h4 {
+                                font-size: 18px;
+                            }
+    
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+    
+                    .nav_list {
+                        padding:5px 16px;
+    
+                        .list_item {
+                            font-size: 14px;
+                            cursor: none;
+                            padding: 8px;    
+                        }
+                    }
+    
+    
+                    .logout {
+                        padding: 5px 10px;
+                    }
+                }
+                .menu {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 4px;
+                }
+            }
+        }
+
+        .responsive_header {
+            .innerparent {
+                .header {
+                    .Logo {
+                        width: 110px;
+                        height: 37px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .header_container {
+        margin-bottom: 0px;
+
+        .inner_parent {
+            padding: 8px 0px;
+
+            .left_container {
+                .appLogo {
+                    width: 110px;
+                    height: 37px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .middle_container {
+                display: none;
+            }
+
+            .right_container {
+                .right {
+                    display: none;
+                }
+
+                .right_resp {
+                    display: block;
+
+                    .login {
+                        padding: 4px 6px;
+
+                        .MuiTypography-root {
+                            font-size: 14px;
+                        }
+                    }
+
+                }
+                .sidebar_nav {
+                    .nav_profile {
+                        padding: 16px;
+                        gap: 6px;
+                        .nav_image {
+                            height: 48px;
+                            width: 48px;
+                        }
+    
+                        .nav_data {
+                            h4 {
+                                font-size: 18px;
+                            }
+    
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+    
+                    .nav_list {
+                        padding:5px 16px;
+    
+                        .list_item {
+                            font-size: 14px;
+                            cursor: none;
+                            padding: 8px;    
+                        }
+                    }
+    
+    
+                    .logout {
+                        padding: 5px 10px;
+                    }
+                }
+                .menu {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 4px;
+                }
+            }
+        }
+
+        .responsive_header {
+            .innerparent {
+                .header {
+                    .Logo {
+                        width: 110px;
+                        height: 37px;
+                    }
+                }
+
+                .navlist {
+                    margin-top: 8px;
+                }
+            }
+        }
+
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .header_container {
+        margin-bottom: 0px;
+
+        .inner_parent {
+            padding: 8px 0px;
+
+            .left_container {
+                .appLogo {
+                    width: 110px;
+                    height: 37px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .middle_container {
+                display: none;
+            }
+
+            .right_container {
+                .right {
+                    display: none;
+                }
+
+                .right_resp {
+                    display: block;
+
+                    .login {
+                        padding: 3px 4px;
+
+                        .MuiTypography-root {
+                            font-size: 14px;
+                        }
+                    }
+
+                }
+                .sidebar_nav {
+                    .nav_profile {
+                        padding: 16px;
+                        gap: 6px;
+                        .nav_image {
+                            height: 48px;
+                            width: 48px;
+                        }
+    
+                        .nav_data {
+                            h4 {
+                                font-size: 18px;
+                            }
+    
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+    
+                    .nav_list {
+                        padding:5px 16px;
+    
+                        .list_item {
+                            font-size: 14px;
+                            cursor: none;
+                            padding: 8px;    
+                        }
+                    }
+    
+    
+                    .logout {
+                        padding: 5px 10px;
+                    }
+                }
+                .menu {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 4px;
+                }
+            }
+        }
+
+        .responsive_header {
+            .innerparent {
+                .header {
+                    .Logo {
+                        width: 115px;
+                        height: 43px;
+                    }
+                }
+
+                .navlist {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    .header_container {
+        margin-bottom: 0px;
+
+        .inner_parent {
+            padding: 8px 0px;
+
+            .left_container {
+                .appLogo {
+                    width: 105px;
+                    height: 37px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .middle_container {
+                display: none;
+            }
+
+            .right_container {
+                .right {
+                    display: none;
+                }
+
+                .right_resp {
+                    display: block;
+
+                    .login {
+                        padding: 3px 4px;
+
+                        .MuiTypography-root {
+                            font-size: 14px;
+                        }
+                    }
+
+                }
+                .sidebar_nav {
+                    .nav_profile {
+                        padding:10px;
+                        gap: 6px;
+                        .nav_image {
+                            height: 48px;
+                            width: 48px;
+                        }
+    
+                        .nav_data {
+                            h4 {
+                                font-size: 16px;
+                            }
+    
+                            p {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+    
+                    .nav_list {
+                        padding:5px 10px;
+    
+                        .list_item {
+                            font-size: 14px;
+                            cursor: none;
+                            padding: 8px;    
+                        }
+                    }
+    
+    
+                    .logout {
+                        padding: 5px 10px;
+                    }
+                }
+                .menu {
+                    display: flex;
+                    align-items: center;
+                    margin-left: 4px;
+                }
+            }
+        }
+
+        .responsive_header {
+            .innerparent {
+                .header {
+                    .Logo {
+                        width: 105px;
+                        height: 37px;
+                    }
+                }
+
+                .navlist {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}

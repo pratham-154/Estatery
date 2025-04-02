@@ -1,0 +1,726 @@
+@import '../base/mixin.scss';
+@import '../base/variable.scss';
+@import '../helper/base.scss';
+
+.blog_container {
+    .parent {
+        margin-bottom: 40px;
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 600;
+            text-align: left;
+            margin-bottom: 32px;
+            color: #181A2A;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        h4 {
+            font-size: 28px;
+        }
+
+        h5 {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: left;
+            color: #181A2A;
+            margin-bottom: 18px;
+        }
+
+        h6 {
+            font-size: 20px;
+            font-weight: 400;
+            text-align: left;
+            color: #3B3C4A;
+            margin-bottom: 32px;
+            line-height: 32px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            text-align: left;
+            color: #696A75;
+        }
+
+        ul {
+            margin-bottom: 10px;
+            padding-left: 20px;
+
+            li {
+                font-size: 20px;
+                line-height: 32px;
+                font-weight: 400;
+                color: #3B3C4A;
+                list-style:disc;
+            }
+        }
+
+        table {
+            border: 1px groove black;
+            border-collapse: collapse;
+            padding: 8px;
+            margin: 0 auto;
+        }
+
+        th,
+        td,
+        tfoot tbody,
+        thead {
+            font-size: 20px;
+            border: 1px groove black;
+            border-collapse: collapse;
+            border-spacing: 0;
+            padding: 8px;
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .account {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 20px;
+
+            .MuiSvgIcon-root {
+                color: grey;
+            }
+
+            .detail {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+        .image {
+            height: auto;
+            overflow: hidden;
+            margin-bottom: 32px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: fill;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1500px) and (max-width: 1599px) {}
+
+@media (min-width: 1400px) and (max-width: 1499px) {}
+
+@media (min-width: 1300px) and (max-width: 1399px) {
+
+    .blog_container {
+        .parent {
+            margin-bottom: 40px;
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+
+            h4 {
+                font-size: 26px;
+            }
+
+            h5 {
+                font-size: 22px;
+                margin-bottom: 18px;
+            }
+
+            h6 {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                margin-bottom: 10px;
+
+                li {
+                    font-size: 18px;
+                }
+            }
+
+            th,
+            td,
+            tfoot {
+                font-size: 18px;
+            }
+
+            caption {
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+    .blog_container {
+        .parent {
+            margin-bottom: 40px;
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 28px;
+            }
+
+            h4 {
+                font-size: 26px;
+            }
+
+            h5 {
+                font-size: 22px;
+                margin-bottom: 18px;
+            }
+
+            h6 {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                margin-bottom: 10px;
+
+                li {
+                    font-size: 18px;
+                }
+            }
+
+            th,
+            td,
+            tfoot {
+                font-size: 18px;
+            }
+
+            caption {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .blog_container {
+        .parent {
+            margin-bottom: 30px;
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                margin-bottom: 28px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            h3 {
+                font-size: 26px;
+            }
+
+            h4 {
+                font-size: 24px;
+            }
+
+            h5 {
+                font-size: 22px;
+                margin-bottom: 18px;
+            }
+
+            h6 {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+
+            ul {
+                margin-bottom: 10px;
+
+                li {
+                    font-size: 18px;
+                }
+            }
+
+            th,
+            td,
+            tfoot {
+                font-size: 18px;
+            }
+
+            caption {
+                font-size: 18px;
+            }
+
+            .account {
+                margin-bottom: 18px;
+
+                .detail {
+                    gap: 8px;
+                }
+            }
+
+            .image {
+                margin-bottom: 28px;
+
+            }
+        }
+    }
+
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog_container {
+        .parent {
+            margin-bottom: 30px;
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                margin-bottom: 26px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+
+            h6 {
+                font-size: 16px;
+                margin-bottom: 28px;
+                line-height: 27px;
+            }
+
+            ul {
+                margin-bottom: 10px;
+
+                li {
+                    font-size: 16px;
+                    line-height: 30px;
+
+                }
+            }
+
+            th,
+            td,
+            tfoot {
+                font-size: 16px;
+            }
+
+            caption {
+                font-size: 16px;
+            }
+
+            .account {
+                margin-bottom: 16px;
+
+                .detail {
+                    gap: 8px;
+                }
+            }
+
+            .image {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .blog_container {
+        .parent {
+            margin-bottom: 30px;
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                margin-bottom: 26px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 22px;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+
+            h5 {
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+
+            h6 {
+                font-size: 14px;
+                margin-bottom: 20px;
+                line-height: 27px;
+            }
+
+            ul {
+                margin-bottom: 10px;
+
+                li {
+                    font-size: 14px;
+                    line-height: 30px;
+
+                }
+            }
+
+            th,
+            td,
+            tfoot {
+                font-size: 14px;
+            }
+
+            caption {
+                font-size: 14px;
+            }
+
+            .account {
+                margin-bottom: 14px;
+
+                .detail {
+                    gap: 8px;
+                }
+            }
+
+            .image {
+                margin-bottom: 22px;
+
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .blog_container {
+        .parent {
+            margin-bottom: 30px;
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                margin-bottom: 22px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            h4 {
+                font-size: 19px;
+            }
+
+            h5 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            h6 {
+                font-size: 14px;
+                margin-bottom: 16px;
+                line-height: 24px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            ul {
+                margin-bottom: 8px;
+
+                li {
+                    font-size: 14px;
+                    line-height: 28px;
+
+                }
+            }
+
+            th,
+            td,
+            tfoot {
+                font-size: 14px;
+            }
+
+            caption {
+                font-size: 14px;
+            }
+
+            .account {
+                margin-bottom: 12px;
+
+                .detail {
+                    gap: 8px;
+                }
+            }
+
+            .image {
+                margin-bottom: 20px;
+                height: 200px;
+
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .blog_container {
+        .parent {
+            margin-bottom: 30px;
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                margin-bottom: 22px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            h4 {
+                font-size: 19px;
+            }
+
+            h5 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            h6 {
+                font-size: 14px;
+                margin-bottom: 16px;
+                line-height: 24px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            ul {
+                margin-bottom: 10px;
+
+                li {
+                    font-size: 14px;
+                    line-height: 28px;
+
+                }
+            }
+
+            th,
+            td,
+            tfoot {
+                font-size: 14px;
+            }
+
+            caption {
+                font-size: 14px;
+            }
+
+            .account {
+                margin-bottom: 12px;
+
+                .detail {
+                    gap: 8px;
+                }
+            }
+
+            .image {
+                margin-bottom: 20px;
+                height: 200px;
+
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    .blog_container {
+        .parent {
+            margin-bottom: 30px;
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 21px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            h4 {
+                font-size: 19px;
+            }
+
+            h5 {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            h6 {
+                font-size: 14px;
+                margin-bottom: 14px;
+                line-height: 24px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            ul {
+                margin-bottom: 8px;
+
+                li {
+                    font-size: 14px;
+                    line-height: 28px;
+
+                }
+            }
+
+            th,
+            td,
+            tfoot {
+                font-size: 14px;
+            }
+
+            caption {
+                font-size: 14px;
+            }
+
+            .account {
+                margin-bottom: 12px;
+
+                .detail {
+                    gap: 8px;
+                }
+            }
+
+            .image {
+                margin-bottom: 20px;
+                height: 180px;
+
+            }
+        }
+    }
+}

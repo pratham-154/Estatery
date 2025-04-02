@@ -1,0 +1,423 @@
+@import '../base/mixin.scss';
+@import '../base/variable.scss';
+
+.liked_container{
+    margin: 40px 0px;
+    .liked_parent{
+        .results {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+        
+            .text {
+                display: flex;
+                align-items: baseline;
+                gap: 5px;
+        
+                .MuiTypography-h4 {
+                    font-size: 24px;
+                    font-weight: 500;
+                    text-align: left;
+                    color: black;
+        
+                }
+        
+                .MuiTypography-h6 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-align: left;
+                    color: rgb(193, 188, 188);
+                }
+        
+            }
+        
+        
+            .filter {
+                display: none;
+        
+                .MuiButtonBase-root {
+                    text-transform: none;
+                    font-size: 18px;
+        
+                }
+            }
+        }
+        
+        .card {
+        
+            border: 1px solid rgb(225, 225, 225);
+            padding-bottom: 7px;
+            border-radius: 8px;
+        
+            &:hover {
+                box-shadow: 1px 1px 6px 0.5px rgba(24, 69, 182, 1);
+            }
+        
+            .image_div {
+                height: 160px;
+                overflow: hidden;
+                border-radius: 8px 8px 0px 0px;
+                cursor: pointer;
+        
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: transform 0.3s ease;
+        
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        
+            .details {
+                padding-left: 10px;
+        
+                .title {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    margin-bottom: 2px;
+        
+                    .MuiTypography-root {
+                        // padding-left: 10px;
+                        cursor: pointer;
+                        background-color: transparent;
+                        outline: none;
+                        box-shadow: none;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-align: left;
+                        padding-top: 9px;
+                    }
+                }
+        
+                .city {
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-align: left;
+                    color: grey;
+        
+                    .MuiSvgIcon-root {
+                        height: 18px;
+                        width: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .pagination{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+            background-color: lightgrey;
+            color: purple;
+            font-weight: 550;
+        }
+    }
+}
+
+
+@media (min-width: 1920px) {
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .liked_container{
+        margin: 30px 0px;
+        .liked_parent{
+            .card {
+                .image_div {
+                    height: 208px;
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .liked_container{
+        margin: 20px 0px ;
+        .liked_parent{
+            .card {
+                .results {
+                    margin-bottom: 7px;
+
+                    .text {
+                        .MuiTypography-h4 {
+                            font-size: 18px;
+                        }
+
+                        .MuiTypography-h6 {
+                            font-size: 12px;
+                        }
+                    }
+
+                }
+
+                .card {
+                    .image_div {
+                        height: 150px;
+                        cursor: none;
+
+                    }
+
+                    .details {
+                        .title {
+                            .MuiTypography-root {
+                                font-size: 14px;
+                                padding-top: 6px;
+                                cursor: none;
+
+                            }
+
+                            .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+                                padding-top: 6px;
+
+                                .MuiSvgIcon-root {
+                                    height: 18px;
+                                    width: 18px;
+                                }
+                            }
+                        }
+
+                        .city {
+                            font-size: 12px;
+
+                            .MuiSvgIcon-root {
+                                height: 14px;
+                                width: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .liked_container{
+        margin: 10px 0px 30px 0px;
+        .liked_parent{
+            .card {
+                .image_div {
+                    height: 208px;
+                }
+            }
+        }
+    }
+
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .liked_container{
+        margin: 10px 0px 30px 0px;
+        .liked_parent{
+            .results {
+                margin-bottom: 4px;
+
+                .text {
+                    .MuiTypography-h4 {
+                        font-size: 18px;
+                    }
+
+                    .MuiTypography-h6 {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .card {
+                .image_div {
+                    height: 180px;
+                    cursor: none;
+
+
+                    img {
+                        object-fit: fill;
+                    }
+                }
+
+                .details {
+                    .title {
+                        .MuiTypography-root {
+                            font-size: 14px;
+                            padding-top: 6px;
+                            cursor: none;
+
+                        }
+
+                        .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+                            padding-top: 6px;
+
+                            .MuiSvgIcon-root {
+                                height: 18px;
+                                width: 18px;
+                            }
+                        }
+                    }
+
+                    .city {
+                        font-size: 12px;
+
+                        .MuiSvgIcon-root {
+                            height: 14px;
+                            width: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .liked_container{
+        margin: 10px 0px 30px 0px;
+        .liked_parent{
+            .results {
+                margin: 3px;
+
+                .text {
+                    .MuiTypography-h4 {
+                        font-size: 18px;
+                    }
+
+                    .MuiTypography-h6 {
+                        font-size: 12px;
+                    }
+                }
+
+            }
+
+            .card {
+                .image_div {
+                    height: 180px;
+                    cursor: none;
+
+
+                    img {
+                        object-fit: fill;
+                    }
+                }
+
+                .details {
+                    .title {
+                        .MuiTypography-root {
+                            font-size: 14px;
+                            padding-top: 6px;
+                            cursor: none;
+
+                        }
+
+                        .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+                            padding-top: 6px;
+
+                            .MuiSvgIcon-root {
+                                height: 18px;
+                                width: 18px;
+                            }
+                        }
+                    }
+
+                    .city {
+                        font-size: 12px;
+
+                        .MuiSvgIcon-root {
+                            height: 14px;
+                            width: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    .liked_container{
+        margin: 10px 0px 30px 0px;
+        .liked_parent{
+            .results {
+                margin: 3px;
+
+                .text {
+                    .MuiTypography-h4 {
+                        font: size 17px;
+                    }
+
+                    .MuiTypography-h6 {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .card {
+                .image_div {
+                    height: 150px;
+                    cursor: none;
+
+
+                    img {
+                        object-fit: fill;
+                    }
+                }
+
+                .details {
+                    .title {
+                        .MuiTypography-root {
+                            font-size: 14px;
+                            padding-top: 6px;
+                            cursor: none;
+
+                        }
+
+                        .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+                            padding-top: 6px;
+
+                            .MuiSvgIcon-root {
+                                height: 18px;
+                                width: 18px;
+                            }
+                        }
+                    }
+
+                    .city {
+                        font-size: 12px;
+
+                        .MuiSvgIcon-root {
+                            height: 14px;
+                            width: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,835 @@
+@import '../base/mixin.scss';
+@import '../base/variable.scss';
+@import '../helper/base.scss';
+@import '../helper/reset.scss';
+
+
+.auth_section {
+
+    .auth_area {
+        padding: 40px 0px;
+        display: flex;
+        @include clearfix();
+        align-items: center;
+
+        .left {
+            width: 50%;
+            float: left;
+
+            .logo {
+                width: 156px;
+                height: 55px;
+                margin-bottom: 70px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .form_area {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0px 90px 0px 30px;
+
+                .header {
+
+                    .MuiTypography-h4 {
+                        font-family: Rozha One;
+                        font-size: 25px;
+                        font-weight: 700;
+                        line-height: 42.6px;
+                        text-align: left;
+                        color: #000000;
+                        margin-bottom: 25px;
+                    }
+
+                    .MuiTypography-h6 {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        text-align: left;
+                        color: #4D5E80;
+                        margin-bottom: 25px;
+
+                        a {
+                            color: #1C48B8;
+                            @extend %bottom-Line_animation;
+                        }
+                    }
+                }
+
+                .form_fields {
+                    margin-bottom: 30px;
+
+                    &.otp_input {
+                        display: flex;
+                        justify-content: center;
+                        align-self: center;
+                        margin-bottom: 80px;
+
+                        input {
+                            width: 2em !important;
+                            font-size: 24px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            padding: 16px 8px;
+                            border-radius: 14px;
+                            border: 1px solid grey;
+                            background-color: white;
+                            color: black;
+                            margin-right: 24px;
+                        }
+                    }
+
+                    .MuiFormControl-root {
+                        width: 100%;
+                        // @extend %bottom-Line_animation;
+
+                        .MuiFormLabel-root {
+
+                            font-size: 16px;
+                            font-weight: 900;
+                            line-height: 25px;
+                            text-align: left;
+                            color: #7D8FB3;
+                        }
+
+                        .MuiInputBase-input {
+
+                            font-size: 14px;
+                            font-weight: 900;
+                            line-height: 25px;
+                            text-align: left;
+                            color: #7D8FB3;
+
+                            &:hover {
+                                color: #1443B4;
+
+                            }
+
+
+                        }
+                    }
+                }
+
+                .extras {
+                    margin-bottom: 70px;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .remember {
+                        display: flex;
+                        font-size: 13px;
+                        font-weight: 900;
+                        line-height: 25px;
+                        text-align: left;
+                        color: #7D8FB3;
+                        
+                        input {
+                            margin-right: 3px;
+                        }
+                    }
+                    
+                    .forgot_pass {
+                        a {
+                            
+                            font-size: 13px;
+                            font-weight: 700;
+                            line-height: 25px;
+                            text-align: left;
+                            color: #1C48B8;
+                            @extend %bottom-Line_animation;
+                        }
+                        
+                    }
+                }
+
+            }
+
+        }
+
+        .right {
+            float: right;
+            width: 50%;
+            border-radius: 15px;
+            height: 90vh;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+
+        }
+    }
+
+    &.forgot_section {
+        .auth_area {
+            .left {
+                .form_area {
+                    .btn_area {
+                        margin-top: 130px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.otp_section {
+        .auth_area {
+            .left {
+                .form_area {
+                    .btn_area {
+                        margin-top: 130px;
+                    }
+
+                    .resend_otp_section {
+                        text-align: center;
+                        margin-top: 5px;
+
+                        .MuiTypography-h6 {
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 20px;
+                            color: #4D5E80;
+                        }
+
+                        span {
+                            text-indent: 4px;
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 20px;
+                            color: $primaryBlue_color;
+                            @extend %bottom-Line_animation;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.reset_section {
+        .auth_area {
+            .left {
+                .logo {
+                    margin-bottom: 50px;
+                }
+
+                .form_area {
+                    .btn_area {
+                        margin-top: 80px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &.Signin {
+        .auth_area {
+            .left {
+                .logo {
+                    margin-bottom: 40px;
+                }
+
+                .form_area {
+                    .form_fields {
+                        margin-bottom: 20px;
+                    }
+
+                   .btn_area{
+                    margin-top: 50px;
+                   }
+                }
+            }
+        }
+    }
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .auth_section {
+        .auth_area {
+            padding: 20px 0px;
+
+            .left {
+                width: 100%;
+                float: none;
+
+                .logo {
+                    width: 125px;
+                    height: 40px;
+                }
+
+                .form_area {
+                    padding: 0px 14px;
+
+                    .header {
+
+                        .MuiTypography-h4 {
+                            font-size: 23px;
+                            margin-bottom: 15px;
+                        }
+
+                        .MuiTypography-h6 {
+
+                            font-size: 15px;
+                            margin-bottom: 25px;
+
+                        }
+                    }
+
+                    .form_fields {
+                        &.otp_input {
+                            input {
+                                padding: 10px 8px;
+                                margin-right: 16px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .right {
+                display: none;
+            }
+        }
+
+        &.forgot_section {
+            .auth_area {
+                .left {
+
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        &.otp_section {
+            .auth_area {
+                .left {
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        &.reset_section {
+            .auth_area {
+                .left {
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        &.Signin {
+            .auth_area {
+                .left {
+                    .logo {
+                        margin-bottom: 40px;
+                    }
+
+                    .form_area {
+                        .btn_area {
+                            margin-top: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .auth_section {
+        .auth_area {
+            padding: 20px 0px;
+
+            .left {
+                width: 100%;
+                float: none;
+
+
+                .logo {
+                    width: 125px;
+                    height: 40px;
+                    margin-bottom: 55px;
+                }
+
+                .form_area {
+                    padding: 0px 14px;
+
+                    .form_fields {
+                        &.otp_input {
+                            input {
+                                padding: 10px 4px;
+                                margin-right: 12px;
+                                line-height: 24px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    .header {
+
+                        .MuiTypography-h4 {
+                            font-size: 23px;
+                            margin-bottom: 15px;
+                        }
+
+                        .MuiTypography-h6 {
+
+                            font-size: 15px;
+                            margin-bottom: 25px;
+
+                        }
+                    }
+                }
+
+            }
+
+            .right {
+                display: none;
+            }
+        }
+
+        &.forgot_section {
+            .auth_area {
+                .left {
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.otp_section {
+            .auth_area {
+                .left {
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.reset_section {
+            .auth_area {
+                .left {
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.Signin {
+            .auth_area {
+                .left {
+                    .logo {
+                        margin-bottom: 30px;
+                    }
+
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .auth_section {
+        .auth_area {
+            padding: 20px 0px;
+
+            .left {
+                width: 100%;
+                float: none;
+
+
+                .logo {
+                    width: 125px;
+                    height: 40px;
+                    // margin-bottom:20px ;
+                }
+
+                .form_area {
+                    padding: 0px 14px;
+
+                    .form_fields {
+                        &.otp_input {
+                            input {
+                                padding: 8px 0px;
+                                margin-right: 10px;
+                                line-height: 24px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    .header {
+
+                        .MuiTypography-h4 {
+                            font-size: 23px;
+                            margin-bottom: 15px;
+                        }
+
+                        .MuiTypography-h6 {
+
+                            font-size: 15px;
+                            margin-bottom: 25px;
+
+                        }
+                    }
+                }
+
+            }
+
+            .right {
+                display: none;
+            }
+        }
+
+        &.forgot_section {
+            .auth_area {
+                .left {
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.otp_section {
+            .auth_area {
+                .left {
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+
+                        .resend_otp_section {
+                            .MuiTypography-h6 {
+                                font-size: 14px;
+                            }
+
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.reset_section {
+            .auth_area {
+                .left {
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.Signin {
+            .auth_area {
+                .left {
+                    .logo {
+                        margin-bottom: 20px;
+                    }
+
+                    .form_area {
+                        .btn_area {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .auth_section {
+        .auth_area {
+            padding: 20px 0px;
+
+            .left {
+                width: 100%;
+                float: none;
+
+
+                .logo {
+                    width: 125px;
+                    height: 40px;
+                    // margin-bottom:20px ;
+                }
+
+                .form_area {
+                    padding: 0px 8px;
+
+                    .form_fields {
+                        &.otp_input {
+                            input {
+                                font-size: 14px;
+                                padding: 8px 0px;
+                                margin-right: 8px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+
+                    .header {
+
+                        .MuiTypography-h4 {
+                            font-size: 23px;
+                            margin-bottom: 15px;
+                        }
+
+                        .MuiTypography-h6 {
+
+                            font-size: 15px;
+                            margin-bottom: 25px;
+
+                        }
+                    }
+                }
+            }
+
+            .right {
+                display: none;
+            }
+        }
+
+        &.forgot_section {
+            .auth_area {
+                .left {
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.otp_section {
+            .auth_area {
+                .left {
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+
+                        .resend_otp_section {
+                            .MuiTypography-h6 {
+                                font-size: 14px;
+                            }
+
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.reset_section {
+            .auth_area {
+                .left {
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.Signin {
+            .auth_area {
+                .left {
+                    .logo {
+                        margin-bottom: 20px;
+                    }
+
+                    .form_area {
+                        .btn_area {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    .auth_section {
+        .auth_area {
+            padding: 20px 0px;
+
+            .left {
+                width: 100%;
+                float: none;
+
+
+                .logo {
+                    width: 125px;
+                    height: 40px;
+                    margin-bottom: 40px;
+
+                }
+
+                .form_area {
+                    padding: 0px 8px;
+                    .form_fields {
+                        &.otp_input {
+                            input {
+                                font-size: 14px;
+                                padding: 8px 0px;
+                                margin-right: 8px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+
+                    .header {
+
+                        .MuiTypography-h4 {
+                            font-size: 20px;
+                            margin-bottom: 13px;
+                        }
+
+                        .MuiTypography-h6 {
+
+                            font-size: 14px;
+                            margin-bottom: 23px;
+
+                        }
+                    }
+                }
+            }
+
+            .right {
+                display: none;
+            }
+        }
+
+        &.forgot_section {
+            .auth_area {
+                .left {
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.otp_section {
+            .auth_area {
+                .left {
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                        .resend_otp_section {
+                            .MuiTypography-h6 {
+                                font-size: 14px;
+                            }
+
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.reset_section {
+            .auth_area {
+                .left {
+                    .logo {
+                        margin-bottom: 30px;
+                    }
+
+                    .form_area {
+                        .btn_area {
+                            margin-top: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.Signin {
+            .auth_area {
+                .left {
+                    .logo {
+                        margin-bottom: 20px;
+                    }
+
+                    .form_area {
+                        .btn_area {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

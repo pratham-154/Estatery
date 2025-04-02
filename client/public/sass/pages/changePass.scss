@@ -1,0 +1,391 @@
+@import '../base/mixin.scss';
+@import '../base/variable.scss';
+@import '../helper/base.scss';
+
+.changepass_container {
+    margin: 40px 0px;
+    overflow-x: hidden;
+
+    .changepass_parent {
+        display: flex;
+        position: relative;
+        clear: both;
+
+        .sidebar {
+            float: left;
+            width: 330px;
+        }
+
+        .pass_right {
+            float: right;
+            width: calc(100% - 330px);
+            position: relative;
+            clear: both;
+
+            .left {
+                float: left;
+                width: 530px;
+
+                h3 {
+                    // font-family: Rozha One;
+                    font-size: 40px;
+                    font-weight: 600;
+                    line-height: 56.8px;
+                    text-align: left;
+                    color: rgb(0, 0, 0, 1);
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    // font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 27px;
+                    text-align: left;
+                    color: rgba(77, 94, 128, 1);
+                    margin-bottom: 50px;
+                }
+
+                .input_fields {
+                    h4 {
+                        // font-family: Inter;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 20px;
+                        text-align: left;
+                        color: rgb(0,0,0,1);
+                        margin-bottom: 10px;
+                    }
+                    .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+
+                }
+                .btn_area{
+                    margin-top: 30px;
+                }
+            }
+
+            .right {
+
+                float: right;
+                width: calc(100% - 530px);
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                Image {
+                    height: auto;
+                    width: auto;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {
+}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {
+}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .changepass_container {
+        margin: 15px 0px 40px 0px;
+        .changepass_parent {
+    
+            .pass_right {
+                .left{
+                    width: 95%;
+                    float: none;
+                    p{
+                        margin-bottom: 35px;
+                    }
+                }
+                
+                .right {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .changepass_container {
+        margin:10px 0px 40px 0px;
+        .changepass_parent {
+    
+            .sidebar {
+                float: none;
+                display: none;
+            }
+    
+            .pass_right {
+                float:none;
+                width: 100% ;
+    
+                .left {
+                    float: none;
+                    width: 95%;
+    
+                    p {
+                        margin-bottom: 35px;
+                    }
+                }
+    
+                .right {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .changepass_container {
+        margin:0px 0px 40px 0px;
+        .changepass_parent {
+            .sidebar {
+                float: none;
+                display: none;
+            }
+    
+            .pass_right {
+                float:none;
+                width: 100% ;
+    
+                .left {
+                    float: none;
+                    width: 95%;
+                    h3{
+                        font-size: 28px;
+                        margin-bottom:2px ;
+                    }
+    
+                    p {
+                        font-size: 14px;
+                        margin-bottom: 24px;
+                    }
+                    .input_fields {
+                        h4 {
+                            // font-family: Inter;
+                            font-size: 14px;
+                            margin-bottom: 8px;
+                        }
+                        .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+                            width: 100%;
+                            margin-bottom: 20px;
+                            .css-1eed5fa-MuiInputBase-root-MuiInput-root {
+                                font-size: 14px;
+                            }
+
+                        }
+    
+                    }
+                }
+    
+                .right {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .changepass_container {
+        margin:0px 0px 40px 0px;
+        .changepass_parent {
+            .sidebar {
+                float: none;
+                display: none;
+            }
+    
+            .pass_right {
+                float:none;
+                width: 100% ;
+    
+                .left {
+                    float: none;
+                    width: 95%;
+                    h3{
+                        font-size: 24px;
+                        margin-bottom:9px ;
+                        line-height: 40px;
+                    }
+    
+                    p {
+                        font-size: 14px;
+                        margin-bottom: 20px;
+                        line-height: 22px;
+                    }
+                    .input_fields {
+                        h4 {
+                            // font-family: Inter;
+                            font-size: 14px;
+                            margin-bottom: 2px;
+                        }
+                        .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+                            width: 100%;
+                            margin-bottom: 20px;
+                            .css-1eed5fa-MuiInputBase-root-MuiInput-root {
+                                font-size: 14px;
+                                .MuiSvgIcon-root{
+                                    height: 19px;
+                                    width: 19px;
+                                }
+                            }
+
+                        }
+    
+                    }
+                }
+    
+                .right {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .changepass_container {
+        margin:0px 0px 40px 0px;
+        .changepass_parent {
+            .sidebar {
+                float: none;
+                display: none;
+            }
+    
+            .pass_right {
+                float:none;
+                width: 100% ;
+    
+                .left {
+                    float: none;
+                    width: 95%;
+                    h3{
+                        font-size: 24px;
+                        margin-bottom:2px ;
+                        line-height: 40px;
+                    }
+    
+                    p {
+                        font-size: 14px;
+                        margin-bottom: 20px;
+                        line-height: 22px;
+                    }
+                    .input_fields {
+                        h4 {
+                            // font-family: Inter;
+                            font-size: 14px;
+                            margin-bottom: 6px;
+                        }
+                        .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+                            width: 100%;
+                            margin-bottom: 20px;
+                            .css-1eed5fa-MuiInputBase-root-MuiInput-root {
+                                font-size: 14px;
+                                .MuiSvgIcon-root{
+                                    height: 19px;
+                                    width: 19px;
+                                }
+                            }
+
+                        }
+    
+                    }
+                }
+    
+                .right {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    .changepass_container {
+        margin:0px 0px 40px 0px;
+        .changepass_parent {
+            .sidebar {
+                float: none;
+                display: none;
+            }
+    
+            .pass_right {
+                float:none;
+                width: 100% ;
+    
+                .left {
+                    float: none;
+                    width: 95%;
+                    h3{
+                        font-size: 20px;
+                        margin-bottom:2px ;
+                        line-height: 40px;
+                    }
+    
+                    p {
+                        font-size: 12px;
+                        margin-bottom: 20px;
+                        line-height: 22px;
+                    }
+                    .input_fields {
+                        h4 {
+                            // font-family: Inter;
+                            font-size: 14px;
+                            margin-bottom: 6px;
+                        }
+                        .css-1u3bzj6-MuiFormControl-root-MuiTextField-root{
+                            width: 100%;
+                            margin-bottom: 20px;
+                            .css-1eed5fa-MuiInputBase-root-MuiInput-root {
+                                font-size: 14px;
+                                .MuiSvgIcon-root{
+                                    height: 19px;
+                                    width: 19px;
+                                }
+                            }
+
+                        }
+    
+                    }
+                }
+    
+                .right {
+                    display: none;
+                }
+            }
+        }
+    }
+}

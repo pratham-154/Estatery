@@ -1,0 +1,106 @@
+@import '../base/mixin.scss';
+@import '../base/variable.scss';
+@import '../helper/base.scss';
+
+
+.sidebar_parent {
+    margin-right: 20px;
+    border-radius: 16px 16px 0px;
+    overflow: hidden;
+
+    .profile {
+        background-color: rgba(178, 173, 246, 1);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px;
+
+        .image {
+            height: 53px;
+            width: 53px;
+            overflow: hidden;
+            border-radius: 50%;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .data {
+            h4 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 31.25px;
+                color: white;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20.83px;
+                color: white;
+            }
+        }
+    }
+
+    .list {
+        padding: 0px 10px;
+
+        .list_item {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20.83px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            gap: 10px;
+            padding: 16px;
+            color: rgb(0, 0, 0, 1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+            .MuiSvgIcon-root {
+                color: rgba(0, 0, 0, 1);
+            }
+
+            &:hover {
+                color: #7E81E7;
+
+                .MuiSvgIcon-root {
+                    color: #7E81E7;
+                }
+            }
+
+            &.active {
+                color: #7E81E7;
+                font-weight: 650;
+
+                .MuiSvgIcon-root {
+                    color: #7E81E7;
+                }
+            }
+        }
+    }
+
+
+    .logout {
+        padding: 18px;
+
+        .MuiButtonBase-root {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20.83px;
+            color: rgb(0, 0, 0, 1);
+            text-transform: none;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                color: #0F40B2;
+                transform: scale(1.07);
+            }
+        }
+    }
+}

@@ -1,0 +1,690 @@
+@import "../base/mixin.scss";
+@import "../base/variable.scss";
+@import "../helper/base.scss";
+@import "../helper/reset.scss";
+
+.contact_container {
+    .upper_container {
+        background: linear-gradient(90deg, #7E81E7 -12.81%, #0F40B2 100%);
+        position: relative;
+        margin-bottom: 98px;
+
+        .inner_parent {
+            padding: 100px 0px;
+
+            .header {
+                font-size: 24px;
+                font-weight: 700;
+                text-align: left;
+                color: white;
+                margin-bottom: 10px;
+
+            }
+
+            .get_in_touch {
+                font-size: 27px;
+                font-weight: 700;
+                text-align: left;
+                color: white;
+                max-width: 507px;
+                margin-bottom: 10px;
+            }
+
+            .description {
+                font-size: 16px;
+                font-weight: 400;
+                text-align: left;
+                color: white;
+                max-width: 638px;
+            }
+        }
+
+        ::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 520px;
+            background-image: url('../../../public/images/contact/contact1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .lower_container {
+        margin-bottom: 40px;
+
+        .header {
+            margin-bottom: 50px;
+
+            .MuiTypography-h4 {
+                font-size: 25px;
+                font-weight: 700;
+                text-align: center;
+                color: #1A1A1A;
+            }
+
+            .MuiTypography-h6 {
+                font-size: 16px;
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+
+        .main_content {
+            .images {
+                position: relative;
+                height: 500px;
+
+                .house {
+                    position: absolute;
+                    height: 384px;
+                    width: 439px;
+                    top: 70px;
+                    right: 76px;
+                    z-index: 3;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .rectangle1 {
+                    position: absolute;
+                    height: 368px;
+                    width: 239px;
+                    z-index: 1;
+                    top: -84px;
+                    right: 63px;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .rectangle2 {
+                    position: absolute;
+                    right: 199px;
+                    height: 368px;
+                    width: 239px;
+                    top: -90px;
+                    z-index: 1;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                .elipse {
+                    position: absolute;
+                    height: 363px;
+                    width: 398px;
+                    z-index: 2;
+                    top: 45px;
+                    /* left: -9px; */
+                    right: 138px;
+                    border-radius: 60%;
+                    background-color: #E0DEF7;
+                }
+            }
+
+            .details {
+                margin-left: 30px;
+                .input_field {
+                    .MuiFormControl-root {
+                        width: 80%;
+
+                        .MuiInputBase-root {
+                            border-radius: 10px;
+                        }
+                    }
+
+                    &.message {
+                        .MuiFormControl-root {
+                            width: 90%;
+                            grid-row: auto;
+
+                            .MuiInputBase-root {
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+
+                .button_submit {
+                    margin-top: 40px;
+
+                    .MuiButtonBase-root {
+                        padding: 12px 30px 12px 30px;
+                        border-radius: 6px;
+                        background: linear-gradient(90deg, #7E81E7 -12.81%, #0F40B2 100%);
+                        color: white;
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+@media (min-width: 1300px) and (max-width: 1399px) {}
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+    .contact_container {
+        .upper_container {
+            ::after {
+                width: 470px;
+            }
+        }
+    }
+}
+
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 1100px) and (max-width: 1199px) {
+    .contact_container {
+        .upper_container {
+            .inner_parent {
+
+                .description {
+                    max-width: 580px;
+                }
+            }
+
+            ::after {
+                width: 440px;
+            }
+        }
+
+        .lower_container {
+            .main_content {
+                .details {
+                    margin-left: 0px;
+                    padding: 0px 45px;
+
+                    .input_field {
+                        .MuiFormControl-root {
+                            width: 100%;
+                        }
+
+                        &.message {
+                            .MuiFormControl-root {
+                                width: 100%;
+
+                            }
+                        }
+                    }
+
+                    .button_submit {
+                        text-align: center;
+
+                        .MuiButtonBase-root {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1099px) {
+    .contact_container {
+        .upper_container {
+            margin-bottom: 60px;
+            .inner_parent {
+                padding: 70px 0px;
+
+                .description {
+                    max-width: 580px;
+                }
+            }
+
+            ::after {
+                width: 400px;
+            }
+        }
+
+        .lower_container {
+            margin-bottom: 15px;
+            .main_content {
+                .details {
+                    margin-left: 0px;
+                    padding: 0px 30px;
+
+                    .input_field {
+                        .MuiFormControl-root {
+                            width: 100%;
+                        }
+
+                        &.message {
+                            .MuiFormControl-root {
+                                width: 100%;
+
+                            }
+                        }
+                    }
+
+                    .button_submit {
+                        text-align: center;
+
+                        .MuiButtonBase-root {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .contact_container {
+        .upper_container {
+            margin-bottom: 60px;
+            .inner_parent {
+                padding: 34px 0px;
+                
+                .header {
+                    font-size: 21px;
+                }
+
+                .get_in_touch {
+                    font-size: 24px;
+                    max-width: none;
+                }
+
+                .description {
+                    font-size: 15px;
+                    max-width: 700px;
+                }
+
+            }
+
+            ::after {
+                display: none;
+            }
+        }
+
+        .lower_container {
+            margin-bottom: 15px;
+            .header {    
+                .MuiTypography-h4 {
+                    font-size: 24px;
+                }
+    
+                .MuiTypography-h6 {
+                    font-size: 15px;
+                }
+            }
+            .main_content {
+                .details {
+                    margin-left: 0px;
+                    padding: 0px 10px;
+
+                    .input_field {
+                        .MuiFormControl-root {
+                            width: 100%;
+                        }
+
+                        &.message {
+                            .MuiFormControl-root {
+                                width: 100%;
+
+                            }
+                        }
+                    }
+
+                    .button_submit {
+                        text-align: center;
+
+                        .MuiButtonBase-root {
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .contact_container {
+        .upper_container {
+            margin-bottom: 35px;
+            .inner_parent {
+                padding: 24px 0px;
+                
+                .header {
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                }
+
+                .get_in_touch {
+                    font-size: 18px;
+                    max-width: none;
+                    margin-bottom: 5px;
+                    
+                }
+
+                .description {
+                    font-size: 14px;
+                    max-width: 700px;
+                }
+
+            }
+
+            ::after {
+                display: none;
+            }
+        }
+
+        .lower_container {
+            margin-bottom: 5px;
+            .header {    
+                .MuiTypography-h4 {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+    
+                .MuiTypography-h6 {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+            .main_content {
+                .details {
+                    margin-left: 0px;
+                    padding: 0px 8px;
+
+                    .input_field {
+                        .MuiFormControl-root {
+                            width: 100%;
+                            .MuiFormLabel-root {
+                                font-size: 14px;
+                            }
+                        }
+
+                        &.message {
+                            .MuiFormControl-root {
+                                width: 100%;
+                                .MuiFormLabel-root {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+
+                    .button_submit {
+                        text-align: center;
+
+                        .MuiButtonBase-root {
+                            width: 30%;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .contact_container {
+        .upper_container {
+            margin-bottom: 37px;
+            .inner_parent {
+                padding: 17px 0px;
+                
+                .header {
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                }
+
+                .get_in_touch {
+                    font-size: 18px;
+                    max-width: none;
+                    margin-bottom: 6px;
+                }
+
+                .description {
+                    font-size: 14px;
+                    max-width: 700px;
+                }
+
+            }
+
+            ::after {
+                display: none;
+            }
+        }
+
+        .lower_container {
+            .header {  
+                margin-bottom: 30px;  
+                .MuiTypography-h4 {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+    
+                .MuiTypography-h6 {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+            .main_content {
+                .details {
+                    margin-left: 0px;
+                    .input_field {
+                        .MuiFormControl-root {
+                            width: 100%;
+                            .MuiFormLabel-root {
+                                font-size: 14px;
+                            }
+                        }
+
+                        &.message {
+                            .MuiFormControl-root {
+                                width: 100%;
+                                .MuiFormLabel-root {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+
+                    .button_submit {
+                        text-align: center;
+                        margin-top: 23px;
+
+                        .MuiButtonBase-root {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .contact_container {
+        .upper_container {
+            margin-bottom: 30px;
+            .inner_parent {
+                padding: 17px 0px;
+                
+                .header {
+                    font-size: 18px;
+                    margin-bottom: 3px;
+                }
+
+                .get_in_touch {
+                    font-size: 18px;
+                    max-width: none;
+                    margin-bottom: 4px;
+                }
+
+                .description {
+                    font-size: 14px;
+                    max-width: 700px;
+                }
+
+            }
+
+            ::after {
+                display: none;
+            }
+        }
+
+        .lower_container {
+            .header {  
+                margin-bottom: 30px;  
+                .MuiTypography-h4 {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+    
+                .MuiTypography-h6 {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+            .main_content {
+                .details {
+                    margin-left: 0px;
+                    .input_field {
+                        .MuiFormControl-root {
+                            width: 100%;
+                            .MuiFormLabel-root {
+                                font-size: 14px;
+                            }
+                        }
+
+                        &.message {
+                            .MuiFormControl-root {
+                                width: 100%;
+                                .MuiFormLabel-root {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+
+                    .button_submit {
+                        text-align: center;
+                        margin-top: 23px;
+
+                        .MuiButtonBase-root {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    .contact_container {
+        .upper_container {
+            margin-bottom: 27px;
+            .inner_parent {
+                padding: 12px 0px;
+                
+                .header {
+                    font-size: 18px;
+                    margin-bottom: 3px;
+                }
+
+                .get_in_touch {
+                    font-size: 18px;
+                    max-width: none;
+                    margin-bottom: 4px;
+                }
+
+                .description {
+                    font-size: 14px;
+                    max-width: 700px;
+                }
+
+            }
+
+            ::after {
+                display: none;
+            }
+        }
+
+        .lower_container {
+            .header {  
+                margin-bottom: 30px;  
+                .MuiTypography-h4 {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+    
+                .MuiTypography-h6 {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+            .main_content {
+                .details {
+                    margin-left: 0px;
+                    .input_field {
+                        .MuiFormControl-root {
+                            width: 100%;
+                            .MuiFormLabel-root {
+                                font-size: 14px;
+                            }
+                        }
+
+                        &.message {
+                            .MuiFormControl-root {
+                                width: 100%;
+                                .MuiFormLabel-root {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+
+                    .button_submit {
+                        text-align: center;
+                        margin-top: 23px;
+
+                        .MuiButtonBase-root {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

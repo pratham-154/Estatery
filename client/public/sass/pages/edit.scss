@@ -1,0 +1,244 @@
+@import "../base/mixin.scss";
+@import "../base/variable.scss";
+@import "../helper/base.scss";
+
+.edit_container {
+    margin: 30px 0px;
+    overflow-x: hidden;
+
+
+    .edit_parent {
+        position: relative;
+        clear: both;
+
+        .sidebar {
+            float: left;
+            width: 330px;
+        }
+
+        .edit_right {
+            float: right;
+            width: calc(100% - 330px);
+            margin-top: 10px;
+
+            .css-u4tvz2-MuiFormLabel-root {
+                font-family: DM Sans;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20.83px;
+                text-align: left;
+                color: rgb(0, 0, 0, 1);
+            }
+        }
+    }
+
+    .buttons {
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+        align-items: center;
+
+        .MuiButtonBase-root {
+            text-transform: none;
+            // font-family: Inter;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 14px;
+            background: linear-gradient(90deg, #7E81E7 -12.81%, #0F40B2 100%);
+            color: white;
+        }
+    }
+}
+
+
+/* Extra Huge large desktops */
+@media (min-width: 1920px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .edit_container {
+        margin: 0px 0px  30px 0px;
+        .edit_parent {
+            .sidebar {
+                float: none;
+                display: none;
+            }
+
+            .edit_right {
+                float:none;
+                width: 100% ;
+                margin-top: 10px;
+            }
+        }
+        .buttons {
+           
+            justify-content: center;
+            .MuiButtonBase-root {
+                padding: 12px 60px;
+              
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .edit_container {
+        margin: 0px 0px  30px 0px;
+        .edit_parent {
+            .sidebar {
+                float: none;
+                display: none;
+            }
+
+            .edit_right {
+                float:none;
+                width: 100% ;
+                margin-top: 10px;
+                .css-u4tvz2-MuiFormLabel-root {
+                    font-size: 14px;
+                }
+                .css-wb57ya-MuiFormControl-root-MuiTextField-root{
+                    .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root{
+                        font-size: 14px;
+                    }
+                }
+
+            }
+        }
+        .buttons {
+           
+            justify-content: center;
+            .MuiButtonBase-root {
+                padding: 12px 60px;
+              
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .edit_container {
+        margin: 0px 0px  30px 0px;
+        .edit_parent {
+            .sidebar {
+                float: none;
+                display: none;
+            }
+
+            .edit_right {
+                float:none;
+                width: 100% ;
+                margin-top: 10px;
+                .css-u4tvz2-MuiFormLabel-root {
+                    font-size: 14px;
+                }
+                .css-wb57ya-MuiFormControl-root-MuiTextField-root{
+                    .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root{
+                        font-size: 14px;
+                    }
+                }
+
+
+            }
+        }
+        .buttons {
+           
+            justify-content: center;
+            .MuiButtonBase-root {
+                padding: 10px 40px;
+              
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .edit_container {
+        margin: 0px 0px  30px 0px;
+        .edit_parent {
+            .sidebar {
+                float: none;
+                display: none;
+            }
+
+            .edit_right {
+                float:none;
+                width: 100% ;
+                margin-top: 10px;
+                .css-u4tvz2-MuiFormLabel-root {
+                    font-size: 14px;
+                }
+                .css-wb57ya-MuiFormControl-root-MuiTextField-root{
+                    .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root{
+                        font-size: 14px;
+                    }
+                }
+                
+
+
+            }
+        }
+        .buttons {
+           
+            justify-content: center;
+            .MuiButtonBase-root {
+                padding: 10px 20px;
+              
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {
+    .edit_container {
+        margin: 0px 0px  30px 0px;
+        .edit_parent {
+            .sidebar {
+                float: none;
+                display: none;
+            }
+
+            .edit_right {
+                float:none;
+                width: 100% ;
+                margin-top: 10px;
+                .css-u4tvz2-MuiFormLabel-root {
+                    font-size: 14px;
+                }
+                .css-wb57ya-MuiFormControl-root-MuiTextField-root{
+                    .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root{
+                        font-size: 14px;
+                    }
+                }
+
+            }
+        }
+        .buttons {
+           
+            justify-content: center;
+            .MuiButtonBase-root {
+                padding: 8px 20px;
+              
+            }
+        }
+    }
+}

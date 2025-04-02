@@ -1,0 +1,1089 @@
+@import '../base/mixin.scss';
+@import '../base/variable.scss';
+@import '../helper/base.scss';
+
+.buy_detail {
+    margin: 30px 0px;
+    
+
+    .detail_parent {
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: none !important;
+            }
+
+            &.mySwiper2 {
+                height: 65%;
+                width: 100%;
+            }
+
+            &.mySwiper {
+                height: 35%;
+                box-sizing: border-box;
+                padding: 10px 0;
+
+                .swiper-slide {
+                    width: 25%;
+                    height: 100%;
+                    opacity: 0.4;
+
+                    &.swiper-slide-thumb-active {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .title {
+            margin-bottom: 32px;
+
+            .heading {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin-bottom: 7px;
+
+                .MuiTypography-root {
+                    font-size: 24px;
+                    font-weight: 650;
+                    line-height: 31.25px;
+                    text-align: left;
+                }
+
+            }
+
+            .address {
+                display: flex;
+                gap: 5px;
+                padding-bottom: 5px;
+                margin-bottom: 2px;
+                align-items: flex-start;
+                border-bottom: 2px solid black;
+
+                .MuiSvgIcon-root {
+                    color: rgb(180 180 180);
+                    height: 22px;
+                    width: 22px;
+
+                }
+
+                h4 {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20.83px;
+                    color: rgba(0, 0, 0, 1);
+                }
+
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+
+        .description {
+            margin-bottom: 30px;
+
+            h4 {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 18.23px;
+                margin-bottom: 8px;
+                color: grey;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                margin-bottom: 4px;
+                color: rgba(0, 0, 0, 1);
+            }
+
+            .MuiButtonBase-root {
+                text-transform: none;
+                color: grey;
+                padding: 0px;
+                text-decoration: 1px solid underline;
+            }
+        }
+
+        .utils {
+            margin-bottom: 40px;
+
+            .utils_list {
+                display: flex;
+                align-items: center;
+                gap: 50px;
+
+                .utils_item {
+                    position: relative;
+
+                    .utils_head {
+                        color: rgb(180 180 180);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 14px;
+                        font-weight: 400;
+                        gap: 8px;
+                        margin-bottom: 15px;
+
+                    }
+
+                    .value {
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 17.6px;
+                        color: rgba(0, 0, 0, 1);
+                        text-align: center;
+                    }
+
+                    &:last-child {
+                        ::after {
+                            display: none;
+                        }
+                    }
+
+                    ::after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        bottom: 0;
+                        right: 1px;
+                        width: 1px;
+                        height: 50%;
+                        transform: translateY(-50%);
+                        margin-right: -24px;
+                        background-color: rgb(180 180 180);
+                    }
+                }
+            }
+        }
+
+        .agent_details {
+            margin-bottom: 50px;
+
+            h4 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 18.23px;
+                color: rgba(0, 0, 0, 0.6);
+                margin-bottom: 10.5px;
+            }
+
+            .details {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 10px;
+
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    min-width: 60px;
+                    line-height: 18.23px;
+                    color: rgb(180 180 180);
+                    display: flex;
+                    align-items: center;
+                }
+
+                h6 {
+                    color: rgba(0, 0, 0, 1);
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 23.44px;
+
+                    .MuiSvgIcon-root {
+                        color: rgb(180 180 180);
+                    }
+                }
+            }
+        }
+
+        .explore {
+            margin: 70px 0px;
+
+            h4 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 52px;
+                color: rgba(0, 0, 0, 1);
+                margin-bottom: 30px;
+            }
+
+            .card {
+                height: 391.66px;
+                position: relative;
+                cursor: pointer;
+                border-radius: 20px;
+                overflow: hidden;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #141414;
+                    opacity: 0.4;
+                    z-index: 2;
+                }
+
+                .featured_image {
+                    height: inherit;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            transform: scale(1.07);
+                            box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.2);
+                        }
+                    }
+                }
+
+                .chip_list {
+                    cursor: default;
+                    position: absolute;
+                    top: 18px;
+                    left: 22px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    z-index: 3;
+
+                    .chip {
+                        width: 88px;
+                        height: 26px;
+                        padding: 0px 14.36px 0px 15px;
+                        border-radius: 33px;
+                        background-color: #1F4B43;
+                        color: white;
+                        text-transform: uppercase;
+                        line-height: 27px;
+                        font-family: Roboto;
+                        font-size: 12px;
+                        font-weight: 500;
+
+                        &.featured {
+                            background-color: #E7C873;
+                            color: black;
+                        }
+                    }
+                }
+
+                .details {
+                    color: white;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 22px;
+                    width: 90%;
+                    z-index: 3;
+
+                    .title {
+                        font-family: Roboto;
+                        font-size: 19px;
+                        font-weight: 500;
+                        text-align: left;
+                        margin-bottom: 5px;
+                    }
+
+                    .address {
+                        font-family: Roboto;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-align: left;
+                        display: flex;
+                        align-items: flex-start;
+                        margin-bottom: 14px;
+
+                    }
+
+                    .bottom {
+                        cursor: default;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: space-between;
+
+                        .list_feature {
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            li {
+                                font-size: 14px;
+                                position: relative;
+                                line-height: 12px;
+                                color: white;
+                                text-shadow: #1F4B43;
+                                margin-right: 30px;
+                                margin-bottom: 7px;
+
+                                .MuiSvgIcon-root {
+                                    font-size: 19px;
+                                }
+
+                                &:last-child {
+                                    margin-right: 0px;
+
+                                    &::before {
+                                        display: none;
+                                    }
+                                }
+
+                                &::before {
+                                    content: "|";
+                                    position: absolute;
+                                    color: white;
+                                    top: 8px;
+                                    bottom: 0;
+                                    right: 0;
+                                    font-size: 16px;
+                                    margin-right: -13px;
+                                }
+                            }
+
+                        }
+
+                        .price {
+                            font-family: Roboto;
+                            font-size: 20px;
+                            font-weight: 550;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+/* Extra Huge large desktops */
+@media (min-width: 1600px) and (max-width: 1679px) {}
+
+/* Extra large desktops and mac laptops*/
+@media (min-width: 1400px) and (max-width: 1599px) {}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .buy_detail {
+        margin-bottom: 30px;
+
+        .detail_parent {
+            
+            .title {
+                margin-bottom: 28px;
+
+                .heading {
+                    margin-bottom: 5px;
+
+                    .MuiTypography-root {
+                        font-size: 22px;
+                    }
+                }
+
+                .address {
+                    h4 {
+                        font-size: 16px;
+                    }
+
+                }
+
+            }
+
+            .description {
+                margin-bottom: 26px;
+
+                h4 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 16px;
+
+                }
+            }
+
+            .utils {
+                margin-bottom: 30px;
+
+                .utils_list {
+                    gap: 40px;
+
+                    .utils_item {
+                        .utils_head {
+                            margin-bottom: 13px;
+                        }
+
+                        .value {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            .agent_details {
+                margin-bottom: 40px;
+
+                .details {
+                    display: flex;
+                    align-items: center;
+
+                    h6 {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .explore {
+                margin: 30px 0px;
+
+                h4 {
+                    font-size: 22px;
+                    margin-bottom: 20px;
+                }
+
+                .card {
+                    cursor: none;
+
+                    .details {
+
+
+                        .title {
+                            font-size: 18px;
+                        }
+
+                        .address {
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                        }
+
+                        .bottom {
+                            .list_feature {
+                                li {
+                                    font-size: 12px;
+
+                                    .MuiSvgIcon-root {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+
+                            .price {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Landscape tablets and ipad */
+@media (min-width: 768px) and (max-width: 991px) {
+    .buy_detail {
+        margin: 30px 0px;
+
+        .detail_parent {
+            .swiper {
+                &.mySwiper2 {
+                    height: 75%;
+                }
+    
+                &.mySwiper {
+                    height: 25%;
+                }
+            }
+            .title {
+                margin-bottom: 28px;
+
+                .heading {
+                    margin-bottom: 5px;
+
+                    .MuiTypography-root {
+                        font-size: 22px;
+                    }
+                }
+
+                .address {
+                    h4 {
+                        font-size: 16px;
+                    }
+
+                }
+            }
+
+            .description {
+                margin-bottom: 26px;
+
+                h4 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 16px;
+
+                }
+            }
+
+            .utils {
+                margin-bottom: 30px;
+
+                .utils_list {
+                    gap: 40px;
+
+                    .utils_item {
+                        .utils_head {
+                            margin-bottom: 13px;
+                        }
+
+                        .value {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .agent_details {
+                margin-bottom: 40px;
+
+                .details {
+                    display: flex;
+                    align-items: center;
+
+                    h6 {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .explore {
+                margin: 30px 0px;
+
+                h4 {
+                    font-size: 22px;
+                    margin-bottom: 20px;
+                }
+
+                .card {
+                    cursor: none;
+
+                    .details {
+
+                        .title {
+                            font-size: 18px;
+                        }
+
+                        .address {
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                        }
+
+                        .bottom {
+                            .list_feature {
+                                li {
+                                    font-size: 12px;
+                                    margin-bottom: 3px;
+
+                                    .MuiSvgIcon-root {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+
+                            .price {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767px) {
+    .buy_detail {
+        margin: 20px 0px;
+
+        .detail_parent {
+            .swiper {
+                &.mySwiper2 {
+                    height: 75%;
+                }
+    
+                &.mySwiper {
+                    height: 25%;
+                }
+            }
+            .title {
+                margin-bottom: 16px;
+
+                .heading {
+                    margin-bottom: 5px;
+
+                    .MuiTypography-root {
+                        font-size: 20px;
+                    }
+                }
+
+                .address {
+                    h4 {
+                        font-size: 14px;
+                    }
+
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .description {
+                margin-bottom: 20px;
+
+                h4 {
+                    font-size: 16px;
+                    margin-bottom:5px ;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    .MuiSvgIcon-root{
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+
+            .utils {
+                margin-bottom: 30px;
+
+                .utils_list {
+                    gap: 40px;
+
+                    .utils_item {
+                        .utils_head {
+                            margin-bottom: 8px;
+                        }
+
+                        .value {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .agent_details {
+                margin-bottom: 40px;
+
+                .details {
+
+                    h6 {
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 13px;
+                        .MuiSvgIcon-root{
+                            height: 18px;
+                            width: 18px;
+                        }
+                    }
+                }
+            }
+            .btn_area{
+                .css-sghohy-MuiButtonBase-root-MuiButton-root {
+                font-size: 16px;
+                }
+                
+            }
+
+            .explore {
+                margin: 30px 0px;
+
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+
+                .card {
+                    cursor: none;
+
+                    .chip_list{
+                        .chip{
+                            font-size: 10px;
+                            width: 80px;
+                        }
+                    }
+                    .details {
+
+                        .title {
+                            font-size: 16px;
+                        }
+
+                        .address {
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                        }
+
+                        .bottom {
+                            .list_feature {
+                                li {
+                                    font-size: 12px;
+                                    margin-bottom: 3px;
+
+                                    .MuiSvgIcon-root {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+
+                            .price {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 361px) and (max-width: 575px) {
+    .buy_detail {
+        margin: 15px 0px;
+
+        .detail_parent {
+            .swiper {
+                &.mySwiper2 {
+                    height: 75%;
+                }
+    
+                &.mySwiper {
+                    height: 25%;
+                }
+            }
+            .title {
+                margin-bottom: 10px;
+
+                .heading {
+                    margin-bottom: 5px;
+
+                    .MuiTypography-root {
+                        font-size: 20px;
+                    }
+                }
+
+                .address {
+                    h4 {
+                        font-size: 14px;
+                    }
+
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .description {
+                margin-bottom: 20px;
+
+                h4 {
+                    font-size: 16px;
+                    margin-bottom:5px ;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .utils {
+                margin-bottom: 25px;
+
+                .utils_list {
+                    gap: 40px;
+
+                    .utils_item {
+                        .utils_head {
+                            margin-bottom: 8px;
+                            .MuiSvgIcon-root{
+                                height: 20px;
+                                width: 20px;
+                            }
+                        }
+
+                        .value {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .agent_details {
+                margin-bottom: 30px;
+
+                .details {
+
+                    h6 {
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 13px;
+                        .MuiSvgIcon-root{
+                            height: 18px;
+                            width: 18px;
+                        }
+                    }
+                }
+            }
+            .btn_area{
+                .css-sghohy-MuiButtonBase-root-MuiButton-root {
+                font-size: 16px;
+                }
+                
+            }
+
+            .explore {
+                margin: 16px 0px 25px 0px;
+
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+
+                .card {
+                    cursor: none;
+
+                    .chip_list{
+                        .chip{
+                            font-size: 10px;
+                            width: 80px;
+                        }
+                    }
+                    .details {
+
+                        .title {
+                            font-size: 16px;
+                        }
+
+                        .address {
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                        }
+
+                        .bottom {
+                            .list_feature {
+                                li {
+                                    font-size: 12px;
+                                    margin-bottom: 3px;
+
+                                    .MuiSvgIcon-root {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+
+                            .price {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 360px) {
+    .buy_detail {
+        margin: 10px 0px;
+
+        .detail_parent {
+            .swiper {
+                &.mySwiper2 {
+                    height: 75%;
+                }
+    
+                &.mySwiper {
+                    height: 25%;
+                }
+            }
+            .title {
+                margin-bottom: 10px;
+
+                .heading {
+                    margin-bottom: 5px;
+
+                    .MuiTypography-root {
+                        font-size: 20px;
+                    }
+                }
+
+                .address {
+                    h4 {
+                        font-size: 14px;
+                    }
+
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            .description {
+                margin-bottom: 20px;
+
+                h4 {
+                    font-size: 16px;
+                    margin-bottom:5px ;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .utils {
+                margin-bottom: 25px;
+
+                .utils_list {
+                    gap: 40px;
+
+                    .utils_item {
+                        .utils_head {
+                            margin-bottom: 8px;
+                            .MuiSvgIcon-root{
+                                height: 20px;
+                                width: 20px;
+                            }
+                        }
+
+                        .value {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .agent_details {
+                margin-bottom: 30px;
+
+                .details {
+
+                    h6 {
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 13px;
+                        .MuiSvgIcon-root{
+                            height: 18px;
+                            width: 18px;
+                        }
+                    }
+                }
+            }
+            .btn_area{
+                .css-sghohy-MuiButtonBase-root-MuiButton-root {
+                font-size: 16px;
+                }
+                
+            }
+
+            .explore {
+                margin: 16px 0px 25px 0px;
+
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+
+                .card {
+                    cursor: none;
+                    .chip_list{
+                        .chip{
+                            font-size: 10px;
+                            width: 80px;
+                        }
+                    }
+                    .details {
+
+                        .title {
+                            font-size: 16px;
+                        }
+
+                        .address {
+                            font-size: 14px;
+                            margin-bottom: 10px;
+                        }
+
+                        .bottom {
+                            .list_feature {
+                                li {
+                                    font-size: 12px;
+                                    margin-bottom: 3px;
+
+                                    .MuiSvgIcon-root {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+
+                            .price {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 320px) {}
