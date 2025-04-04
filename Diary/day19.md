@@ -1,0 +1,5 @@
+### 2024-08-06: Task 19 - Implementing Cart Management APIs
+
+On Day 19, I developed the APIs to manage the shopping cart data. I created several endpoints, such as adding items to the cart, removing items, and updating product quantities. These APIs interacted with the backend database, allowing cart data to be saved for users. I used Express.js to set up RESTful routes that received requests to add, delete, or update cart items. Each route was connected to a controller function that handled the logic for modifying the cart, including updating quantities and recalculating the total price.
+
+To ensure the cart persisted across different sessions, I integrated user authentication with the cart management system. When users logged in, their cart was saved in the database, and when they logged out and logged back in, their cart would be restored. I also included error handling to return meaningful responses in case of invalid operations, such as attempting to add more items than available in stock. By the end of the day, the cart management APIs were fully functional and connected to the frontend.

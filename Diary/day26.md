@@ -1,0 +1,5 @@
+### 2024-08-16: Task 26 - Testing Core Functionalities
+
+On Day 26, I focused on testing the core functionalities of the website to ensure everything was working as expected. I ran through various use cases, including logging in, browsing products, adding items to the cart, checking out, and viewing order history. Each feature was tested thoroughly to check for bugs or inconsistencies, and I made sure to test on different devices and browsers to ensure cross-platform compatibility.
+
+I also wrote unit tests for the backend APIs to verify that they were returning the correct data and handling errors properly. This involved testing endpoints like user authentication, product listings, and payment processing. By the end of the day, I had identified and fixed several minor issues, ensuring the core functionalities were stable and ready for deployment.

@@ -1,0 +1,5 @@
+### 2024-08-28: Task 34 - Developing Review Submission APIs
+
+On Day 34, I developed the backend APIs to handle the submission of product reviews. These APIs allowed users to post reviews, which were then stored in the database and associated with the relevant product. I created API endpoints using Express.js to handle review submissions, validation, and storage. Each review consisted of a rating, a comment, and the user’s identification.
+
+To ensure data integrity, I implemented validation to check that reviews included both a rating and a comment before they were submitted. I also included error handling to return appropriate responses if any required fields were missing or invalid. By the end of the day, the review submission APIs were functioning properly, allowing users to provide feedback that would be displayed on the frontend.

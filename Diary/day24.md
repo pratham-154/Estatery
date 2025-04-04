@@ -1,0 +1,5 @@
+### 2024-08-13: Task 24 - Adding Order History Page
+
+On Day 24, I added the order history page, which allowed users to view their past orders. This page displayed key information such as the order number, date, total price, and the current status of each order. To populate the page, I created an API endpoint that retrieved order history data from the backend, ensuring that only orders associated with the logged-in user were displayed.
+
+On the frontend, I created a table to present the order history data in a clean and readable format. Each order could be clicked to view more details, such as the items purchased, shipping address, and payment method. I also added sorting and filtering features, allowing users to sort orders by date or status. By the end of the day, the order history page was fully functional, giving users an easy way to track their past purchases.

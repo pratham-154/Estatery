@@ -1,0 +1,5 @@
+### 2024-09-25: Task 54 - Deploying Frontend to Vercel
+
+On Day 54, I worked on deploying the frontend of the application to Vercel, a platform that simplifies the deployment of static and serverless sites. I began by configuring the Vercel project and connecting it to the GitHub repository. This allowed for seamless integration with the CI/CD pipeline, ensuring that the frontend would be automatically deployed whenever changes were pushed to the repository.
+
+After configuring the deployment settings, I deployed the frontend to Vercel and verified that all the static assets and dynamic content were correctly loaded. I also checked the responsiveness of the frontend across different devices and screen sizes to ensure that it worked well for all users. By the end of the day, the frontend was successfully deployed to Vercel, and all components were functioning properly.

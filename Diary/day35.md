@@ -1,0 +1,5 @@
+### 2024-08-29: Task 35 - Managing Review Display on Frontend
+
+On Day 35, I focused on displaying the reviews submitted by users on the product detail pages. I created a React component to fetch and render reviews, displaying each one in a clean, easy-to-read format. I also added logic to calculate and display the average product rating based on the submitted reviews. This was important for giving future buyers an overview of how well the product had been received by others.
+
+I ensured that the reviews were dynamically loaded, so users could see the most recent reviews at the top of the list. I also included a feature that allowed users to filter the reviews by rating, helping them quickly find the most relevant feedback. By the end of the day, the review display system was complete, offering a comprehensive and helpful view of customer opinions.

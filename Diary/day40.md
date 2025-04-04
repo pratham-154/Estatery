@@ -1,0 +1,5 @@
+### 2024-09-05: Task 40 - Managing Orders in Admin Panel
+
+On Day 40, I worked on managing orders within the admin panel. This feature allowed administrators to view and manage customer orders, including updating order status, such as "processing," "shipped," or "delivered." I created an interface that displayed a list of all orders, along with relevant details like customer information, product(s) ordered, and order status.
+
+I implemented backend APIs to update the status of orders and retrieve order details. This ensured that admins could handle any necessary order changes, such as marking an order as completed or canceling an order. I also included search and filter functionalities to allow admins to find orders by customer, date, or status. By the end of the day, the order management system was fully integrated, improving the admin's ability to oversee and manage customer transactions effectively.

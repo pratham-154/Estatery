@@ -1,0 +1,5 @@
+### 2024-09-16: Task 47 - Conducting Backend Testing
+
+On Day 47, I focused on conducting backend testing to ensure the server-side logic was functioning correctly. I tested the API endpoints for creating, updating, and deleting data, such as user accounts, orders, and products. Using tools like Postman, I simulated various API requests to check if the backend handled them appropriately, returning the correct responses and error messages.
+
+I also conducted load testing to ensure the server could handle multiple simultaneous requests without crashing or slowing down. Additionally, I tested security features, such as user authentication and authorization, to ensure that only authorized users could access protected resources. By the end of the day, the backend had passed testing, ensuring the system was robust and secure.

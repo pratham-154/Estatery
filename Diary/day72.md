@@ -1,0 +1,5 @@
+### 2024-10-22: Task 72 - Conducting Cross-Platform Testing
+
+On Day 72, I conducted cross-platform testing to ensure the mobile app performed well on both Android and iOS devices. Since we were using React Native, it was crucial to verify that the app’s design and functionality were consistent across both platforms. I installed the app on multiple devices and checked for any platform-specific issues, such as layout inconsistencies or performance problems.
+
+During this process, I discovered a few minor discrepancies between Android and iOS, such as different button styles and slight variations in screen layouts. I worked on fixing these issues by applying platform-specific styles and adjustments. By the end of the day, the app was performing well on both platforms, and I had addressed the major cross-platform concerns.

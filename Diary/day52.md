@@ -1,0 +1,5 @@
+### 2024-09-23: Task 52 - Configuring CI/CD Pipelines
+
+On Day 52, I focused on configuring the Continuous Integration (CI) and Continuous Deployment (CD) pipelines to automate the deployment process. I began by setting up a GitHub Actions workflow, which automatically ran tests and built the project whenever changes were pushed to the repository. This ensured that new code changes were always tested and ready for deployment.
+
+I also worked on the deployment pipeline, configuring it to automatically deploy the application to the production server once all tests passed. This included setting up automatic deployments to both the backend and frontend environments. By the end of the day, the CI/CD pipelines were fully configured, streamlining the deployment process and ensuring that the latest changes were deployed quickly and reliably.

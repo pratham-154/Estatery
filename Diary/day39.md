@@ -1,0 +1,5 @@
+### 2024-09-04: Task 39 - Adding User Management in Admin Panel
+
+On Day 39, I focused on adding user management functionality to the admin panel. This feature allowed administrators to view, edit, and delete user accounts, which was essential for managing the platform's customer base. I created a user interface where admins could search for users by name, email, or status, as well as view detailed user profiles, including order history and account activity.
+
+I also built backend APIs that facilitated user management tasks, such as updating user information and changing account status (e.g., activating or deactivating accounts). Additionally, I implemented search functionality to quickly locate users based on different criteria. By the end of the day, the user management feature was fully operational, providing admins with the tools needed to effectively manage user accounts.

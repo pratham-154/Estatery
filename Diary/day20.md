@@ -1,0 +1,5 @@
+### 2024-08-07: Task 20 - Building Checkout Page Layout
+
+On Day 20, I focused on building the layout for the checkout page, which would allow users to review their orders, enter shipping information, and select a payment method. The page design included sections for the order summary, shipping address form, and payment options. I used React components to break down each part of the page, including the form fields for collecting user information like name, address, and payment details. The layout was made responsive to ensure a smooth experience across different devices.
+
+In addition to the basic form structure, I added features like input validation to ensure that all required fields were filled out correctly before proceeding to the next step. I also included a progress bar at the top of the page to indicate the steps of the checkout process. By the end of the day, the checkout page layout was fully designed, providing a user-friendly and visually appealing interface for completing the purchase process.

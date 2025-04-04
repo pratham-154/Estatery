@@ -1,0 +1,5 @@
+### 2024-08-21: Task 29 - Setting up Redux for State Management
+
+On Day 29, I set up Redux to manage the global state of the application. Redux is an efficient tool for managing application-level state, and I recognized that its implementation would streamline the process of tracking data like user information, shopping cart contents, and product details across different components of the website. I began by installing Redux and its dependencies, such as React-Redux, and then set up the store and reducers to manage the state.
+
+I defined actions and reducers for various features of the application, like adding products to the cart, updating user profiles, and tracking the progress of the order. By the end of the day, Redux was successfully integrated into the project, providing a single source of truth for the state across the entire application, making it easier to manage and update the state across multiple components.

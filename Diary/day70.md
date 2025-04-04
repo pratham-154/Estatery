@@ -1,0 +1,5 @@
+### 2024-10-18: Task 70 - Integrating Backend with Mobile App
+
+On Day 70, I focused on integrating the mobile app with the backend services. The mobile app needed to communicate with the API to fetch and display data, so the first task was to set up HTTP requests between the app and the server. I used Axios, a promise-based HTTP client, to make requests to the backend and retrieve data such as product listings, user profiles, and order histories.
+
+I also worked on ensuring that the mobile app handled authentication properly by integrating the JWT authentication system we had previously set up for the website. This involved setting up token management, including login and logout functionality, to ensure that users could access their accounts securely. By the end of the day, the mobile app was able to interact with the backend, providing dynamic data to users.
