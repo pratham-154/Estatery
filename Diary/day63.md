@@ -1,5 +1,9 @@
-### 2024-10-09: Task 63 - Monitoring Post-Launch Performance
+### 2025-04-11: Task 63 - Integrating "Add Property" and "Edit Property" Pages
 
-On Day 63, I focused on monitoring the post-launch performance of the website. After the launch, it was important to keep track of user activity, server performance, and any issues that might arise. I used analytics tools to monitor user behavior, including how users were navigating the site, which features were most popular, and where users were encountering problems.
+* Developed and integrated the "Add Property" and "Edit Property" pages to allow users to input and modify property details.
 
-I also kept an eye on the server’s performance, ensuring that the website was loading quickly and that the backend was handling the traffic efficiently. During this period, I addressed any issues that came up, such as slow page load times or broken links. By the end of the day, the website was performing well, and the data gathered would help guide any necessary improvements or optimizations.
+* Implemented forms with validation for required fields like property name, type, price, and location.
+
+* Set up functionality for submitting data via API calls to the backend, ensuring properties are added or updated in the database.
+
+* Ensured that images, descriptions, and other media related to the properties are properly handled.

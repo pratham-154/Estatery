@@ -1,5 +1,10 @@
-### 2024-10-25: Task 75 - Launching the Mobile App
+### 2025-04-25: Task 75 - Deploying Frontend on Vercel
 
-On Day 75, we officially launched the mobile app. I submitted the app to both the Google Play Store and the Apple App Store, ensuring that all necessary information and assets were included. I also coordinated with the marketing team to ensure that the launch was well-publicized, sharing the news through social media channels, email newsletters, and other promotional outlets.
+* Deployed the frontend application to Vercel, ensuring it is accessible through a public URL.
 
-During the launch, I monitored the app’s performance, checking for any issues such as crashes or errors. I was also on standby to address any urgent bugs that users reported. By the end of the day, the mobile app was live and available for download, and we began tracking the user feedback to gauge its success.
+* Configured Vercel’s deployment settings, such as environment variables, build settings, and deployment triggers.
+
+* Ensured that the deployment pipeline is set up to automatically deploy any changes pushed to the main branch of the repository.
+
+* Tested the live frontend deployment for proper functionality and performance.
+

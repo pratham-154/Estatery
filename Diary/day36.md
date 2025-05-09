@@ -1,5 +1,25 @@
-### 2024-08-30: Task 36 - Integrating Real-Time Notifications
+### 2025-03-06: Task 36 - Debugging and UI Refinements
 
-On Day 36, I integrated real-time notifications into the application to enhance user engagement and communication. The notifications would alert users about important events, such as new product arrivals, order status updates, and promotional offers. I used a WebSocket connection to push notifications to the frontend in real time, ensuring that users received updates as soon as they occurred.
+* **Fixing UI Bugs:**
 
-I also added a notification system that allowed users to view their alerts from a dropdown menu, where they could click to see more details. Each notification was designed to be actionable, providing users with options to view the related product or navigate to their order page. By the end of the day, the real-time notification system was fully integrated, improving user interaction with the platform.
+    * Identify and fix misaligned elements, spacing issues, and inconsistent font sizes.
+
+    * Ensure all hover effects and animations work properly without glitches.
+
+* **Testing for Browser Compatibility:**
+
+    * Check UI on Chrome, Firefox, Safari, and Edge.
+
+    * Fix any cross-browser CSS inconsistencies (e.g., flexbox behavior).
+
+* **Final Performance Optimization:**
+
+    * Minimize unnecessary animations to improve page load time.
+
+    * Optimize images (compress large files, use webp format for better loading speeds).
+
+* **Conducting a Final UI Review:**
+
+    * Ensure smooth user experience with clean and polished UI.
+
+    * Get feedback from team members or testers to identify any overlooked issues.

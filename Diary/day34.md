@@ -1,5 +1,32 @@
-### 2024-08-28: Task 34 - Developing Review Submission APIs
+### 2025-03-04: Task 34 - Enhancing the Frontend with CSS Animations
 
-On Day 34, I developed the backend APIs to handle the submission of product reviews. These APIs allowed users to post reviews, which were then stored in the database and associated with the relevant product. I created API endpoints using Express.js to handle review submissions, validation, and storage. Each review consisted of a rating, a comment, and the user’s identification.
+* **Why Add Animations?**
 
-To ensure data integrity, I implemented validation to check that reviews included both a rating and a comment before they were submitted. I also included error handling to return appropriate responses if any required fields were missing or invalid. By the end of the day, the review submission APIs were functioning properly, allowing users to provide feedback that would be displayed on the frontend.
+    * Enhance the user experience by adding smooth transitions.
+
+    * Guide user attention to key elements (e.g., loading spinners, hover effects).
+
+* **Animations Implemented:**
+
+    * **Page Transitions:**
+
+        * Fade-in effect when navigating between pages using Next.js framer-motion.
+
+    * **Button Click Animations:**
+
+        * Ripple effect on button clicks.
+
+    * **Modal Entrance Effects:**
+
+        * Slide-in and fade-in effect when modals appear.
+
+    * **Loading Animations:**
+
+        * Add skeleton loaders while fetching API data.
+
+* **Testing Animations:**
+
+    * Ensure performance is not impacted by too many animations.
+
+    * Optimize animations for mobile devices to prevent lag.
+

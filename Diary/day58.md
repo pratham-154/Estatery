@@ -1,5 +1,9 @@
-### 2024-10-01: Task 58 - Addressing User Feedback
+### 2025-04-05: Task 58 - Integrating Login, Registration, and User Profile
 
-On Day 58, I focused on addressing the user feedback that had been gathered during the User Acceptance Testing (UAT) phase. The feedback provided valuable insights into user experience issues, missing features, and areas for improvement. I began by prioritizing the feedback, categorizing it into issues that required immediate attention and those that could be addressed in future updates. I worked on fixing the most critical bugs, such as UI inconsistencies and navigation difficulties that users encountered.
+* Implemented login and registration forms with necessary validation checks.
 
-After addressing the immediate concerns, I also made improvements to the features based on user suggestions. These included tweaking the checkout process for better usability and refining the product search functionality to make it more intuitive. By the end of the day, many of the feedback points had been implemented, resulting in a more polished and user-friendly application.
+* Integrated the user profile page to display the current user’s information fetched from the backend.
+
+* Set up proper error handling for failed login attempts and registration errors.
+
+* Established secure routes to ensure only logged-in users can access their profile and other restricted areas.

@@ -1,5 +1,33 @@
-### 2024-08-27: Task 33 - Adding Product Reviews Section
+### 2025-02-03: Task 33 - Developing Filter and Sort Functionality
 
-On Day 33, I added a product reviews section to the individual product pages. This feature allowed users to leave feedback on products they had purchased, providing valuable insights for other customers. I began by designing a clean and user-friendly review section, including fields for users to rate the product and leave written comments. Each review included the reviewer’s name, rating, and timestamp, providing context for future buyers.
+* **Filter Implementation:**
 
-I also ensured that the review section was interactive, allowing users to filter reviews by rating or sort them by date. Additionally, I implemented logic to display the average rating for each product based on the reviews submitted. By the end of the day, the product reviews feature was live, providing valuable social proof and enhancing the shopping experience.
+    * Create a filter sidebar with options like:
+
+        * Property Type (Apartment, Villa, Commercial)
+
+        * Price Range (Slider to adjust min/max price)
+
+        * Location (Dropdown or search-based filtering)
+
+    * Use Redux to store selected filters and update the property list dynamically.
+
+* **Sort Implementation:**
+
+    * Add sorting options:
+
+        * Price (Low to High, High to Low)
+
+        * Date Added (Newest to Oldest, Oldest to Newest)
+
+    * Use sort() function in JavaScript to rearrange property listings based on selected criteria.
+
+* **Integrating with API Calls:**
+
+    * Modify API requests to send selected filter parameters and fetch filtered data.
+
+* **Testing & Debugging:**
+
+    * Ensure filtering updates without requiring a page reload.
+
+    * Test combination filters (e.g., Apartments under $1000 in New York).

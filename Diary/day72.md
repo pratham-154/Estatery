@@ -1,5 +1,9 @@
-### 2024-10-22: Task 72 - Conducting Cross-Platform Testing
+### 2025-04-22: Task 72 - Conducting Frontend-Backend Testing
 
-On Day 72, I conducted cross-platform testing to ensure the mobile app performed well on both Android and iOS devices. Since we were using React Native, it was crucial to verify that the app’s design and functionality were consistent across both platforms. I installed the app on multiple devices and checked for any platform-specific issues, such as layout inconsistencies or performance problems.
+* Performed integration testing between the frontend and backend to ensure smooth communication between them.
 
-During this process, I discovered a few minor discrepancies between Android and iOS, such as different button styles and slight variations in screen layouts. I worked on fixing these issues by applying platform-specific styles and adjustments. By the end of the day, the app was performing well on both platforms, and I had addressed the major cross-platform concerns.
+* Focused on validating data flow from the frontend (e.g., form submissions, user inputs) to the backend and vice versa.
+
+* Tested various user actions like adding properties, submitting reviews, and updating user profiles to ensure they trigger the correct API calls and updates.
+
+* Verified the consistency of data displayed on the frontend and what’s stored in the backend.

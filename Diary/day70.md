@@ -1,5 +1,9 @@
-### 2024-10-18: Task 70 - Integrating Backend with Mobile App
+### 2025-04-19: Task 70 - Adding Property Gallery and Reviews
 
-On Day 70, I focused on integrating the mobile app with the backend services. The mobile app needed to communicate with the API to fetch and display data, so the first task was to set up HTTP requests between the app and the server. I used Axios, a promise-based HTTP client, to make requests to the backend and retrieve data such as product listings, user profiles, and order histories.
+* Integrated a property gallery feature, allowing users to upload and view multiple images for each property.
 
-I also worked on ensuring that the mobile app handled authentication properly by integrating the JWT authentication system we had previously set up for the website. This involved setting up token management, including login and logout functionality, to ensure that users could access their accounts securely. By the end of the day, the mobile app was able to interact with the backend, providing dynamic data to users.
+* Implemented a carousel/slider for the property images to allow easy navigation between them.
+
+* Added a review section where users can submit feedback, including ratings and comments for each property.
+
+* Ensured that reviews are stored and retrieved from the backend, with functionality to display average ratings and user comments in a readable format.

@@ -1,5 +1,26 @@
-### 2024-08-29: Task 35 - Managing Review Display on Frontend
+### 2025-03-05: Task 35 - Finalizing Animations and UI Transitions
 
-On Day 35, I focused on displaying the reviews submitted by users on the product detail pages. I created a React component to fetch and render reviews, displaying each one in a clean, easy-to-read format. I also added logic to calculate and display the average product rating based on the submitted reviews. This was important for giving future buyers an overview of how well the product had been received by others.
+* **Review and Polish Existing Animations:**
 
-I ensured that the reviews were dynamically loaded, so users could see the most recent reviews at the top of the list. I also included a feature that allowed users to filter the reviews by rating, helping them quickly find the most relevant feedback. By the end of the day, the review display system was complete, offering a comprehensive and helpful view of customer opinions.
+    * Adjust animation speeds for better UX (avoid slow effects).
+
+    * Ensure transitions don’t break UI consistency.
+
+* **Enhancing Page Transitions:**
+
+    * Add a loading progress bar when navigating between pages.
+
+    * Implement smooth scrolling effects for better navigation.
+
+* **Refining Micro-Animations:**
+
+    * Ensure buttons, cards, and modals have subtle but effective animations.
+
+    * Improve hover and click feedback for interactive elements.
+
+* **Testing Across Devices:**
+
+    * Ensure animations work smoothly on different screen sizes.
+
+    * Avoid unnecessary animations on mobile to save battery and improve performance.
+

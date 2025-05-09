@@ -1,5 +1,30 @@
-### 2024-08-23: Task 31 - Integrating Sass for Styling
+### 2025-02-28: Task 31 - Implementing Modals for User Interactions
 
-On Day 31, I integrated Sass (Syntactically Awesome Stylesheets) into the project to enhance the styling of the application. Sass allows for more maintainable and reusable CSS code, thanks to its features like variables, mixins, and nested rules. I began by setting up the Sass compiler and refactoring the existing CSS to Sass, which made the styles more modular and easier to maintain. I created variables for colors, fonts, and spacing to ensure consistency throughout the site.
+* **Purpose of Modals:**
 
-In addition to basic styles, I created mixins and reusable styles for common components such as buttons, cards, and form elements. This not only made the CSS more organized but also reduced redundancy across the codebase. By the end of the day, the styling of the application was improved, with a more scalable and maintainable structure in place using Sass.
+    * Improve user interaction by providing popups for actions like login, property details, and confirmations.
+
+    * Avoid page reloads by using modals instead of separate pages.
+
+* **Implementation:**
+
+    * Use React Portals to render modals outside the main DOM structure for better accessibility.
+
+    * Implement a generic modal component that can be reused for different features.
+
+* **Types of Modals Added:**
+
+    * Login/Signup Modal (Allows users to authenticate without navigating away)
+
+    * Property Details Quick View (Displays property details in a popup)
+
+    * Delete Confirmation Modal (Asks for confirmation before deleting a property)
+
+* **Styling & Accessibility Enhancements:**
+
+    * Ensure keyboard accessibility (modal closes on Esc key).
+
+    * Add a dark backdrop to improve visibility and focus on the modal content.
+
+    * Implement smooth fade-in and slide-out animations for better user experience.
+

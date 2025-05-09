@@ -1,5 +1,10 @@
-### 2024-11-04: Task 80 - Scaling Infrastructure for Traffic
+### 2025-05-01: Task 80 - Optimizing Website for SEO
 
-On Day 80, I focused on scaling the infrastructure to handle increasing traffic as the app and website continued to grow. With the mobile app launch and growing user base, it was crucial to ensure that the backend systems could handle a larger volume of requests without compromising performance. I worked with the DevOps team to assess our current infrastructure and identify bottlenecks. 
+* Optimized the website for search engine visibility by implementing SEO best practices.
 
-We decided to implement load balancing and scale our cloud resources to better distribute traffic and prevent server overloads. Additionally, we set up auto-scaling to adjust resources dynamically based on real-time demand. By the end of the day, we had a more robust infrastructure in place, ensuring that the app and website would perform reliably under heavy traffic conditions.
+* Ensured proper use of meta tags (title, description, and keywords) for each page to improve search rankings.
+
+* Implemented structured data (schema markup) to help search engines understand the content and structure of the site.
+
+* Reviewed and optimized page load speed, mobile compatibility, and other SEO factors to improve the website’s ranking.
+

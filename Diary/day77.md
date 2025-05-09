@@ -1,5 +1,8 @@
-### 2024-10-29: Task 77 - Updating Website and App Based on Feedback
+### 2025-04-28: Task 77 - Conducting User Acceptance Testing (UAT)
 
-On Day 77, I focused on updating both the website and the mobile app based on the feedback we had gathered. For the mobile app, I addressed several user-reported issues, such as improving the loading speed and fixing minor bugs that were affecting the user experience. I also made some adjustments to the UI based on user suggestions, making the app more intuitive and easier to navigate.
+* Conducted User Acceptance Testing with a select group of users to validate that the application meets the business and functional requirements.
 
-On the website, I implemented similar improvements, optimizing the product pages and checkout process based on user feedback. I also made design tweaks to improve the overall look and feel of the site. By the end of the day, both the website and the mobile app had received significant updates, making them more user-friendly and aligned with user expectations.
+* Observed user interactions, gathered feedback, and documented any issues or areas for improvement.
+
+* Ensured that all core features (e.g., property listings, adding/editing properties, reviews) worked as expected and delivered the intended user experience.
+

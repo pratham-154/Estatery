@@ -1,5 +1,24 @@
-### 2024-09-05: Task 40 - Managing Orders in Admin Panel
+### 2025-03-11: Task 40 - Ensuring Dynamic Content Rendering
 
-On Day 40, I worked on managing orders within the admin panel. This feature allowed administrators to view and manage customer orders, including updating order status, such as "processing," "shipped," or "delivered." I created an interface that displayed a list of all orders, along with relevant details like customer information, product(s) ordered, and order status.
+* **Purpose:**
 
-I implemented backend APIs to update the status of orders and retrieve order details. This ensured that admins could handle any necessary order changes, such as marking an order as completed or canceling an order. I also included search and filter functionalities to allow admins to find orders by customer, date, or status. By the end of the day, the order management system was fully integrated, improving the admin's ability to oversee and manage customer transactions effectively.
+    * Ensure every page dynamically displays content based on API responses.
+
+    * Implement conditional rendering to handle loading states and empty responses.
+
+* **Tasks Completed:**
+
+    * Replaced static placeholder content with fetched data from mock API.
+
+    * Implemented loading spinners while waiting for API responses.
+
+    * Handled error cases (e.g., "No properties found" message when no data is available).
+
+* **Testing & Fixes:**
+
+    * Ensured all listings update dynamically when data changes.
+
+    * Fixed UI flickering when fetching new data.
+
+    * Verified pagination and search filters work as expected.
+

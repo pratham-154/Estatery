@@ -1,5 +1,9 @@
-### 2024-10-16: Task 68 - Prototyping Mobile App Design
+### 2025-04-17: Task 68 - Fixing Bugs and Optimizing Features
 
-On Day 68, I worked on prototyping the design for the mobile app. The goal was to create an initial layout and user interface that would be visually appealing and functional across different devices. I began by gathering requirements from the project stakeholders, focusing on the key features the app would need to support. I then used design tools like Figma to sketch out the app’s flow, screen layouts, and interactions, ensuring that each element was user-friendly.
+* Addressed any remaining bugs identified during final testing, such as UI glitches, backend errors, or performance issues.
 
-I also collaborated with the UI/UX team to refine the design, ensuring that it would provide a seamless experience for users on both Android and iOS. We considered aspects such as navigation, button placement, and responsive design for different screen sizes. By the end of the day, the initial prototype was ready for review, and we were one step closer to turning the design into a functional mobile app.
+* Optimized page load times and API response times by refining database queries and reducing unnecessary API calls.
+
+* Ensured that all user interactions, such as form submissions and button clicks, were smooth and fast.
+
+* Made final refinements to the UI for consistency and visual appeal, ensuring a polished user experience.

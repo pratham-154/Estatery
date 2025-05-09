@@ -1,5 +1,21 @@
-### 2024-09-19: Task 50 - Integrating Analytics Tools
+### 2025-03-27: Task 50 - Optimizing Database Queries
 
-On Day 50, I worked on integrating analytics tools into the application to track user behavior and platform performance. I began by selecting tools like Google Analytics and integrating them into both the frontend and backend. These tools would provide valuable insights into user interactions, such as page views, clicks, and conversions, as well as server performance metrics.
+* **Objective:**
 
-I also worked on setting up event tracking for specific actions, such as product views and purchases, to better understand how users were interacting with the platform. Additionally, I ensured that the analytics tools were configured to gather data without affecting the application's performance. By the end of the day, analytics tools were fully integrated, providing real-time insights into user behavior and platform metrics.
+    * Improve MongoDB query performance.
+
+    * Use indexes and caching for faster API responses.
+
+* **Optimizations Implemented:**
+
+    * Indexed property search fields (location, price).
+
+    * Used pagination (limit & skip) for large datasets.
+
+    * Optimized query execution time.
+
+* **Tasks Completed:**
+
+    * Improved database efficiency.
+
+    * Ensured faster API responses for large data requests.

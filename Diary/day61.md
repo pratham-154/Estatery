@@ -1,5 +1,7 @@
-### 2024-10-07: Task 61 - Finalizing Project for Launch
+### 2025-04-09: Task 61 - Ensuring Smooth User Session Management
 
-On Day 61, I focused on finalizing the project in preparation for the official launch. I reviewed every part of the application, ensuring that all features were working as expected, and that no major bugs were present. I conducted a final round of testing, checking for any last-minute issues that could affect the launch. I also worked on ensuring that the application met all the deployment and hosting requirements.
+* Reviewed and ensured proper session management for maintaining the user’s logged-in state across page reloads and navigation.
 
-I coordinated with the marketing and operations teams to ensure that the launch would go smoothly. This included preparing any launch-related assets, such as promotional materials or blog posts, and ensuring that the website was fully optimized for the increased traffic expected during the launch. By the end of the day, the project was in its final form, ready to be launched to the public.
+* Implemented token storage (e.g., in localStorage or cookies) to ensure the user's session persists.
+
+* Ensured proper logout functionality that deletes user data and token on user logout or session expiration.

@@ -1,5 +1,26 @@
-### 2024-08-08: Task 21 - Setting Up Payment Gateway Integration
+### 2025-02-17: Task 21 - Connecting Redux to Authentication State Management
 
-On Day 21, I integrated a payment gateway into the checkout process to facilitate secure payments. I researched different payment providers and chose one that offered an easy-to-integrate API, ensuring it supported multiple payment methods like credit cards, debit cards, and digital wallets. After setting up the account with the payment provider, I followed their documentation to implement the necessary backend API calls to process payments.
+* **Using Redux in Authentication Flow:**
 
-I then integrated the payment gateway on the frontend, where users could input their payment information securely. I ensured that the payment process was smooth, providing feedback to the user during each stage of the payment. After successfully completing the payment, I ensured the order was finalized and the cart was emptied. By the end of the day, the payment gateway was fully integrated, enabling secure and seamless transactions.
+    * Connect login and register components to Redux.
+
+    * Store user authentication state in Redux instead of local state.
+
+* **Handling Login Actions:**
+
+    * Dispatch loginSuccess action after successful login.
+
+    * Store user details in Redux for global access.
+
+* **Implementing Logout Functionality:**
+
+    * Dispatch logout action on logout button click.
+
+    * Clear authentication state from Redux store.
+
+* **Testing Authentication Flow:**
+
+    * Check if authentication state persists across pages.
+
+    * Ensure correct UI updates based on authentication status.
+

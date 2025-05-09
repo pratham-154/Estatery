@@ -1,5 +1,37 @@
-### 2024-09-03: Task 38 - Implementing Product Management in Admin Panel
+### 2025-03-08: Task 38 - Cross-Browser Testing
 
-On Day 38, I worked on adding product management functionality to the admin panel. This feature allowed administrators to perform operations like adding new products, editing existing product details, and deleting products from the catalog. I began by designing an intuitive interface for these actions, which included forms for entering product details such as name, description, price, and stock level. Additionally, I ensured that product categories could be managed efficiently within the panel.
+* **Purpose:**
 
-I also implemented the necessary backend APIs to handle these operations. The APIs allowed admins to add, update, and delete products, with proper validation to ensure that all required fields were correctly filled out. The UI was designed to be user-friendly, with easy access to the features and clear error messages when actions could not be completed. By the end of the day, the product management feature was fully integrated, enabling the admin to control the product catalog easily.
+    * Ensure the website works consistently across different web browsers.
+
+    * Identify and fix layout issues, JavaScript errors, or CSS inconsistencies that vary by browser.
+
+* **Browsers Tested:**
+
+    * Google Chrome (Most used browser, baseline for UI testing)
+
+    * Mozilla Firefox (Checks JavaScript compatibility and rendering differences)
+
+    * Safari (Checks macOS/iOS behavior, CSS flex/grid rendering)
+
+    * Microsoft Edge (Ensures compatibility for Windows users)
+
+    * Opera & Brave (Additional testing for users with privacy-focused browsers)
+
+* **Common Issues Fixed:**
+
+    * Flexbox inconsistencies in Safari → Used -webkit- prefixes to resolve.
+
+    * Button hover effects not working in Firefox → Adjusted CSS for better compatibility.
+
+    * Scroll behavior inconsistent in Edge → Tweaked overflow properties for smoother scrolling.
+
+    * Performance optimizations (removed unnecessary animations for older browsers).
+
+* **Tools Used for Testing:**
+
+    * BrowserStack (Cross-browser testing platform).
+
+    * Lighthouse (Chrome DevTools) for performance and accessibility analysis.
+
+

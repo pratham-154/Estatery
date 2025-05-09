@@ -1,5 +1,9 @@
-### 2024-10-15: Task 67 - Planning Mobile App Development
+### 2025-04-16: Task 67 - Conducting Final Testing
 
-On Day 67, I began planning for the development of a mobile app that would complement the website. I started by researching the requirements for building a mobile app and how it would integrate with the existing website. This included discussing which features would be most valuable to mobile users, such as push notifications, offline access, and an optimized user interface for smaller screens.
+* Conducted final end-to-end testing of all features, including property listing, user dashboard, and property management pages.
 
-I also worked on outlining the technical stack for the mobile app, considering whether to build a native app for iOS and Android or use a cross-platform solution. I collaborated with the development team to set clear goals and timelines for the project. By the end of the day, I had laid the groundwork for the mobile app development, and we were ready to move forward with the planning process.
+* Focused on testing edge cases, such as incomplete or incorrect form submissions, invalid property details, and API failures.
+
+* Verified that all links, buttons, and actions performed as expected across different browsers and devices.
+
+* Checked the responsiveness of the UI and ensured that all components displayed correctly on mobile, tablet, and desktop screens.

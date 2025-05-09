@@ -1,5 +1,25 @@
-### 2024-08-21: Task 29 - Setting up Redux for State Management
+### 2025-02-26: Task 29 - Reviewing Responsiveness and Usability
 
-On Day 29, I set up Redux to manage the global state of the application. Redux is an efficient tool for managing application-level state, and I recognized that its implementation would streamline the process of tracking data like user information, shopping cart contents, and product details across different components of the website. I began by installing Redux and its dependencies, such as React-Redux, and then set up the store and reducers to manage the state.
+* **Usability Testing:**
 
-I defined actions and reducers for various features of the application, like adding products to the cart, updating user profiles, and tracking the progress of the order. By the end of the day, Redux was successfully integrated into the project, providing a single source of truth for the state across the entire application, making it easier to manage and update the state across multiple components.
+    * Test navigation flow for ease of access.
+
+    * Ensure forms, buttons, and modals behave as expected.
+
+* **Responsiveness Testing on Different Devices:**
+
+    * Check if all elements adjust properly in mobile and tablet views.
+
+    * Verify no content overflows or misalignments occur.
+
+* **Performance Optimization:**
+
+    * Optimize images for faster loading.
+
+    * Minimize CSS and JavaScript files for better performance.
+
+* **Accessibility Checks:**
+
+    * Ensure sufficient color contrast for readability.
+
+    * Test keyboard navigation and screen reader compatibility.

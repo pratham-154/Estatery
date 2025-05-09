@@ -1,5 +1,10 @@
-### 2024-11-06: Task 82 - Enhancing Accessibility Features
+### 2025-05-03: Task 82 - Performance Testing and Optimization
 
-On Day 82, I focused on enhancing the accessibility features of the app and website. Making both platforms accessible to all users, including those with disabilities, was a priority. I reviewed the design and code to ensure compliance with accessibility standards, such as WCAG (Web Content Accessibility Guidelines). 
+* Conducted performance testing to measure page load times, API response times, and overall website performance.
 
-I implemented features like screen reader support, keyboard navigation, and color contrast adjustments to make the app and website more inclusive. We also conducted usability testing with individuals who have accessibility needs to ensure that the new features were effective. By the end of the day, the platforms had been significantly improved in terms of accessibility, ensuring a better experience for all users.
+* Used tools like Lighthouse, GTmetrix, or WebPageTest to analyze the website’s performance across different devices and networks.
+
+* Identified bottlenecks in load time, optimized images, scripts, and CSS files, and improved caching strategies to enhance overall performance.
+
+* Conducted load testing to ensure the website can handle a large number of concurrent users.
+

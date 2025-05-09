@@ -1,5 +1,39 @@
-### 2024-08-09: Task 22 - Developing Order Management API
+### 2025-02-18: Task 22 - Building "Add Property" Form UI
 
-On Day 22, I developed the order management API, which handled creating, viewing, and updating orders after a successful purchase. This API interacted with the backend database to store order details, including user information, the items purchased, and payment status. I created several endpoints for handling different order-related tasks, such as viewing order details, updating order statuses (e.g., "processing" or "shipped"), and tracking the order’s shipping progress.
+* **Creating the Form Layout (AddProperty.js):**
 
-The API also needed to work closely with the user authentication system to ensure that users could only view or manage their own orders. I implemented additional logic to handle edge cases, such as failed payments or orders that couldn’t be processed due to stock issues. By the end of the day, the order management API was live, allowing the backend to track and manage all aspects of the order lifecycle.
+    * Design form sections:
+
+        * Property Name
+
+        * Location
+
+        * Price
+
+        * Property Type (Dropdown)
+
+        * Description
+
+        * Upload Images
+
+        * Contact Details
+
+* **Styling the Form:**
+
+    * Use Flexbox or Grid for structured alignment.
+
+    * Style input fields, buttons, and labels for a clean UI.
+
+* **Adding Controlled Inputs:**
+
+    * Use useState to manage form input values.
+
+    * Set up handlers for onChange events.
+
+* **Enhancing UI:**
+
+    * Add placeholders, required field indicators, and tooltips.
+
+    * Include a submit button with hover effects.
+
+

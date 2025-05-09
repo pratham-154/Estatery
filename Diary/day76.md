@@ -1,5 +1,9 @@
-### 2024-10-28: Task 76 - Gathering Feedback on Mobile App
+### 2025-04-26: Task 76 - Deploying Backend on AWS
 
-On Day 76, I focused on gathering feedback from users about the mobile app. After the launch, it was important to monitor user reviews and feedback to identify any potential issues and opportunities for improvement. I tracked ratings and comments in the app stores, as well as feedback from users through surveys and social media channels.
+* Deployed the backend application to AWS, setting up necessary services like EC2, Lambda, or API Gateway, depending on the project requirements.
 
-I analyzed the feedback to identify common themes, such as complaints about slow load times or suggestions for new features. I categorized the feedback into actionable items and prioritized them based on severity and impact. By the end of the day, we had gathered a comprehensive set of user feedback, which would inform future updates and improvements to the app.
+* Configured security settings, such as setting up IAM roles, VPCs, and access control lists to ensure the backend is secure.
+
+* Connected the deployed backend to the production database and ensured proper data handling.
+
+* Tested all backend functionalities, ensuring that API calls from the frontend were successful.

@@ -1,5 +1,24 @@
-### 2024-09-10: Task 43 - Adding Multi-Language Support
+### 2025-03-14: Task 43 - Learning Node.js and Express.js Basics
 
-On Day 43, I focused on adding multi-language support to the application, which was crucial for expanding the platform's reach to international users. I started by setting up a language localization system that allowed the application to display content in multiple languages. I used libraries such as i18next to handle the translations, making it easy to switch between different languages based on the user's preference.
+* **Objective:**
 
-I also worked on translating the static content of the site, including product descriptions, labels, and navigation menus. To ensure the quality of the translations, I collaborated with a team of translators who provided the necessary text for each language. By the end of the day, the platform supported multiple languages, allowing users to interact with the website in their preferred language.
+    * Understand Node.js as a backend runtime and Express.js as a web framework.
+
+    * Learn how to create a server, handle requests, and structure an API.
+
+* **Key Concepts Covered:**
+
+    * How Node.js works (event-driven, non-blocking I/O model).
+
+    * Setting up an Express server to handle HTTP requests.
+
+    * Middleware functions (logging, request parsing).
+
+* **Tasks Completed:**
+
+    * Installed Node.js and Express.js.
+
+    * Learned how to create routes and middleware.
+
+    * Set up a basic API server.
+

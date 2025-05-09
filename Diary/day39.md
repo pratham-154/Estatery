@@ -1,5 +1,22 @@
-### 2024-09-04: Task 39 - Adding User Management in Admin Panel
+### 2025-03-10: Task 39 - Connecting Static Pages to Mock APIs
 
-On Day 39, I focused on adding user management functionality to the admin panel. This feature allowed administrators to view, edit, and delete user accounts, which was essential for managing the platform's customer base. I created a user interface where admins could search for users by name, email, or status, as well as view detailed user profiles, including order history and account activity.
+* **Why Mock APIs?**
 
-I also built backend APIs that facilitated user management tasks, such as updating user information and changing account status (e.g., activating or deactivating accounts). Additionally, I implemented search functionality to quickly locate users based on different criteria. By the end of the day, the user management feature was fully operational, providing admins with the tools needed to effectively manage user accounts.
+    * Allows testing API-based content rendering before connecting to the real backend.
+
+    * Helps simulate real user interactions (e.g., fetching properties dynamically).
+
+* **Implementation:**
+
+    * Used json-server to create a mock API locally.
+
+    * Created fake API endpoints (/api/properties, /api/users).
+
+    * Connected frontend pages to fetch mock data using Axios.
+
+* **Testing:**
+
+    * Checked if data loads dynamically when navigating between pages.
+
+    * Verified that filtering and sorting work correctly with mock data.
+

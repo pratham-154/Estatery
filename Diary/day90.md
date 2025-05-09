@@ -1,5 +1,13 @@
-### 2024-11-18: Task 90 - Setting Up Customer Support
+### 2025-05-20: Task 90 - Wrapping Up and Submission
 
-On Day 90, I focused on setting up customer support for both the app and website. With the launch and growing user base, it was crucial to have a dedicated team and system in place to address user inquiries and issues. I worked with the customer support team to define workflows, set up help desk software, and create an extensive knowledge base for common user questions.
+* Made any final tweaks or optimizations to ensure the project was polished and ready for submission.
 
-We also implemented a ticketing system to manage and prioritize support requests, ensuring users received timely responses. By the end of the day, the customer support system was fully operational, ready to assist users with any issues they might encounter.
+* Organized and packaged the project files, including code, documentation, and any necessary resources, ensuring everything was easy to navigate and submit.
+
+* Submitted the final project to the relevant platform or instructor, along with any required deliverables, such as reports or presentation materials.
+
+* Cleaned up the project repository by removing unnecessary files and ensuring all dependencies were properly listed in the project’s configuration files.
+
+* Ensured that all submission guidelines were followed, such as including any required project links, screenshots, or demo videos.
+
+* Celebrated the completion of the project and prepared for any follow-up discussions or feedback sessions.

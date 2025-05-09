@@ -1,5 +1,25 @@
-### 2024-08-26: Task 32 - Enhancing UI/UX Design
+### 2025-03-01: Task 32 - Adding Hover Effects for Better UI Experience
 
-On Day 32, I focused on enhancing the UI/UX design of the website to ensure it provided a seamless and intuitive user experience. I worked on refining the visual elements, including fonts, colors, spacing, and the overall layout. By revisiting the homepage and product pages, I made sure that the design was both aesthetically pleasing and easy to navigate. I also worked on improving user interactions, such as hover effects, smooth transitions, and animations to create a more engaging experience.
+* **Purpose of Hover Effects:**
 
-I conducted user testing to gather feedback on the design, making adjustments based on their input. Additionally, I improved the mobile experience by optimizing touch interactions and ensuring the design looked great on smaller screens. By the end of the day, the UI/UX had been significantly improved, providing a more polished and user-friendly experience for visitors.
+    * Improve interactivity and highlight clickable elements.
+
+    * Provide visual feedback for actions (e.g., hovering over a button makes it slightly bigger).
+
+* **Implementation on Various Elements:**
+
+    * **Buttons:**
+
+        * Change background color and add a slight scaling effect.
+
+    * **Cards (Property Listings):**
+
+        * Add a subtle shadow and scale effect to indicate interactivity.
+
+    * **Navbar Links:**
+
+        * Underline effect on hover to indicate navigation.
+
+* **Testing Hover Effects:**
+
+    * Ensure smooth transitions on both desktop and mobile devices (use @media queries to disable hover on touchscreens).

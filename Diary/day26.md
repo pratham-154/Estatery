@@ -1,5 +1,23 @@
-### 2024-08-16: Task 26 - Testing Core Functionalities
+### 2025-02-22: Task 26 - Ensuring Responsiveness for All Newly Added Pages
 
-On Day 26, I focused on testing the core functionalities of the website to ensure everything was working as expected. I ran through various use cases, including logging in, browsing products, adding items to the cart, checking out, and viewing order history. Each feature was tested thoroughly to check for bugs or inconsistencies, and I made sure to test on different devices and browsers to ensure cross-platform compatibility.
+* **Testing Across Devices:**
 
-I also wrote unit tests for the backend APIs to verify that they were returning the correct data and handling errors properly. This involved testing endpoints like user authentication, product listings, and payment processing. By the end of the day, I had identified and fixed several minor issues, ensuring the core functionalities were stable and ready for deployment.
+    * Use Chrome DevTools to simulate mobile and tablet views.
+
+    * Adjust layout for smaller screens using media queries.
+
+* **Fixing UI Issues:**
+
+    * Adjust text sizes, button placements, and grid layouts.
+
+    * Ensure property images resize properly without breaking layout.
+
+* **Optimizing Dashboard for Mobile:**
+
+    * Convert grids to stacked layouts for smaller screens.
+
+    * Implement collapsible sections for better mobile usability.
+
+* **Final Review:**
+
+    * Ensure all pages look consistent across different resolutions.

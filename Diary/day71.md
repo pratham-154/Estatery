@@ -1,5 +1,12 @@
-### 2024-10-21: Task 71 - Testing Mobile App Functionality
+### 2025-04-21: Task 71 - Ensuring Smooth UI/UX Experience
 
-On Day 71, I focused on testing the functionality of the mobile app. Testing was critical to ensure that all the features worked as expected and provided a seamless user experience. I began by manually testing core features such as login, registration, browsing products, adding items to the cart, and checking out. I also tested the app’s responsiveness, checking how it performed on different screen sizes and devices.
+* Focused on refining the user interface (UI) and improving the overall user experience (UX) across all pages.
 
-In addition to manual testing, I wrote unit tests to automate the verification of individual components and functions. This helped identify any bugs early on in the development process and ensured that changes didn’t break existing features. By the end of the day, I had conducted thorough testing of the mobile app’s core functionalities, ensuring that the app was stable and ready for further refinement.
+* Ensured that design elements like buttons, forms, and input fields were visually appealing and easy to interact with.
+
+* Worked on reducing page load times by optimizing images, scripts, and reducing the number of unnecessary API calls.
+
+* Addressed mobile responsiveness, ensuring the website provides a seamless experience across various screen sizes and devices.
+
+* Conducted user testing and gathered feedback to make further adjustments to the UI for intuitive navigation and accessibility.
+

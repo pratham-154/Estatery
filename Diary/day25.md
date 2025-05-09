@@ -1,5 +1,49 @@
-### 2024-08-14: Task 25 - Implementing Wishlist Functionality
+### 2025-02-21: Task 25 - Developing Property Details, Dashboard, and User Profile Pages
 
-On Day 25, I implemented the wishlist functionality, allowing users to save products they were interested in purchasing later. I created a button on each product page that allowed users to add items to their wishlist. This required creating a new database collection to store the wishlist items, along with API endpoints to add, remove, and fetch wishlist items for each user.
+1. **Property Details Page (PropertyDetails.js)**
 
-On the frontend, I designed a wishlist page where users could view all the items they had saved. This page displayed product images, names, and prices, with options to remove items or add them to the cart. I ensured that the wishlist was persistent, so users would retain their saved items even if they logged out or returned to the site later. By the end of the day, the wishlist functionality was fully integrated and ready for use.
+* **Layout Design:**
+
+    * Display property images (carousel or grid view).
+
+    * Show property title, price, location, and description.
+
+    * Add sections for amenities, reviews, and contact details.
+
+* **Styling & UI Enhancements:**
+
+    * Implement a gallery slider for images using react-slick or similar library.
+
+    * Highlight key details like property type and price.
+
+2. **Dashboard Page (Dashboard.js)**
+
+* **Creating Sections:**
+
+    * User Stats (Total Properties, Saved Listings).
+
+    * Quick Actions (Add New Property, View Messages).
+
+* **Styling & Enhancements:**
+
+    * Use grid or flex layout for organizing dashboard widgets.
+
+    * Add icons for better navigation.
+
+3. **User Profile Page (Profile.js)**
+
+* **Profile Overview:**
+
+    * Display user name, profile picture, and account details.
+
+    * Edit Profile section with form inputs for updating user info.
+
+* **Profile Settings:**
+
+    * Allow users to change passwords and update preferences.
+
+* **Final Testing:**
+
+    * Ensure all pages are properly linked from the navigation.
+
+    * Check UI consistency with previously built pages.
